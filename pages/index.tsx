@@ -1,5 +1,6 @@
 import React from 'react';
 // import styles from '../assets/index.css';
+import Navigation from '../layouts/navigation';
 
 // interface HomeProps {
 
@@ -7,7 +8,14 @@ import React from 'react';
 
 function Home () {
     return (
-        <h1>Home Page</h1>
+        <div className="entire-container" >
+            <div className="container">
+                <Navigation />
+            </div>
+            <div className="container">
+                <h1>Welcome to the Laser Site</h1>
+            </div>
+        </div>
     );
 }
 
