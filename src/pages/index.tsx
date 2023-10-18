@@ -14,6 +14,7 @@ function Home () {
                 <Navigation />
             </div>
             <div className="container">
+                {/* I want this carousel to take up the whole beginning part of page */}
                 <h1 style={{ textAlign: 'center' }}>Welcome to the Laser Site</h1>
                 <div id="carouselExampleAutoplaying" className="carousel slide" data-bs-ride="true">
                     <div className="carousel-inner">
