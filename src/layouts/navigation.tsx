@@ -3,8 +3,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // import styles from '../assets/navigation.css';
 
 function Navigation () {
+    const navStyle = {
+        height: '80px',
+        padding: '10px 0',
+        fontSize: '24px',
+    };
     return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-transparent">
+        <nav className="navbar navbar-expand-lg navbar-light bg-transparent" style={navStyle}>
             <div className="container-fluid">
                 <a className="navbar-brand" href="#">LOGO</a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
