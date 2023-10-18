@@ -15,16 +15,16 @@ function Home () {
             </div>
             <div className="container">
                 <h1>Welcome to the Laser Site</h1>
-                <div id="carouselExampleAutoplaying" className="carousel slide" data-bs-ride="carousel">
+                <div id="carouselExampleAutoplaying" className="carousel slide" data-bs-ride="true">
                     <div className="carousel-inner">
                         <div className="carousel-item active">
-                            <img src="..." className="d-block w-100" alt="..."/>
+                            <img src="https://via.placeholder.com/300x200" className="d-block w-100" alt="Image of..."/>
                         </div>
                         <div className="carousel-item">
-                            <img src="..." className="d-block w-100" alt="..."/>
+                            <img src="https://via.placeholder.com/300x100" className="d-block w-100" alt="Image of..."/>
                         </div>
                         <div className="carousel-item">
-                            <img src="..." className="d-block w-100" alt="..."/>
+                            <img src="https://via.placeholder.com/300x300" className="d-block w-100" alt="Image of..."/>
                         </div>
                     </div>
                     <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
