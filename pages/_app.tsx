@@ -1,6 +1,6 @@
 // pages/_app.js (or _app.tsx for TypeScript)
 
-import '../assets/global.css'; // Replace with your global CSS file path
+import '../assets/global.css';
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />;
