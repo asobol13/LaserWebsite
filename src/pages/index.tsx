@@ -14,7 +14,7 @@ function Home () {
                 <Navigation />
             </div>
             <div className="container">
-                <h1>Welcome to the Laser Site</h1>
+                <h1 style={{ textAlign: 'center' }}>Welcome to the Laser Site</h1>
                 <div id="carouselExampleAutoplaying" className="carousel slide" data-bs-ride="true">
                     <div className="carousel-inner">
                         <div className="carousel-item active">
