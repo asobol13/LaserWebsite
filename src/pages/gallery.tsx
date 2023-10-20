@@ -2,6 +2,8 @@ import React from 'react';
 // import styles from '../assets/index.css';
 import Navigation from '../layouts/navigation';
 
+// TODO: A nice looking responsive grid for the photo gallery
+
 function Gallery () {
     return (
         <div className="entire-container">

@@ -2,6 +2,8 @@ import React from 'react';
 // import styles from '../assets/index.css';
 import Navigation from '../layouts/navigation';
 
+// TODO: Immersive photo slide experience along with good story telling aspect
+
 function About () {
     return (
         <div className="entire-container">

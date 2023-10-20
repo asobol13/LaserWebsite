@@ -1,7 +1,9 @@
 import React from 'react';
 // import styles from '../assets/index.css';
 import Navigation from '../layouts/navigation';
-import Footer from '../layouts/footer';
+// import Footer from '../layouts/footer';
+
+// TODO: Need to figure out the styling and look you want for the brand
 
 // interface HomeProps {
 
