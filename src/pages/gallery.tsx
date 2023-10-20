@@ -9,7 +9,7 @@ function Gallery () {
                 <Navigation />
             </div>
             <div className="container">
-                <h1>Gallery Page</h1>
+                <h1 style={{ textAlign: 'center' }}>Gallery Page</h1>
             </div>
         </div>
     );
