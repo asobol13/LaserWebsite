@@ -10,14 +10,14 @@ import Navigation from '../layouts/navigation';
 
 function Home () {
     return (
-        <div className="entire-container" >
+        <div className="entire-container">
             <div className="container">
                 <Navigation />
             </div>
-            <div className="container">
-                <h1 style={{ textAlign: 'center' }}>Laser Website Name Here</h1>
+            <div className="container" style={{ textAlign: 'center' }}>
+                <h1>Laser Website Name Here</h1>
             </div>
-            <div className="container">
+            <div className="container" style={{ alignItems: 'center' }}>
                 <div
                     id="carouselBasicExample"
                     className="carousel slide carousel-fade"
@@ -110,6 +110,9 @@ function Home () {
                     </button>
                 </div>
 
+            </div>
+            <div className="container" style={{ textAlign: 'center' }}>
+                <h3>Welcome to the Laser Co</h3>
             </div>
             {/* <div className="container">
                 <Footer />
