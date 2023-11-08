@@ -1,6 +1,6 @@
 import React from 'react';
 import Navigation from '../layouts/navigation';
-// import Footer from '../layouts/footer';
+import Footer from '../layouts/footer';
 
 // TODO: Need to figure out the styling and look you want for the brand
 
@@ -114,9 +114,9 @@ function Home () {
             <div className="container" style={{ textAlign: 'center' }}>
                 <h3>Welcome to the Laser Co</h3>
             </div>
-            {/* <div className="container">
+            <div className="container" style={{ textAlign: 'center' }}>
                 <Footer />
-            </div> */}
+            </div>
         </div>
     );
 }
