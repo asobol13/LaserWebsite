@@ -8,6 +8,11 @@ import Footer from '../layouts/footer';
 
 // }
 
+const photoCarousel = {
+    height: '300px',
+    alignItems: 'center',
+};
+
 function Home () {
     return (
         <div className="entire-container">
@@ -17,104 +22,34 @@ function Home () {
             <div className="container" style={{ textAlign: 'center' }}>
                 <h1>Laser Website Name Here</h1>
             </div>
-            <div className="container" style={{ alignItems: 'center' }}>
-                <div
-                    id="carouselBasicExample"
-                    className="carousel slide carousel-fade"
-                    data-mdb-ride="carousel"
-                >
-                    <div className="carousel-indicators">
-                        <button
-                            type="button"
-                            data-mdb-target="#carouselBasicExample"
-                            data-mdb-slide-to="0"
-                            className="active"
-                            aria-current="true"
-                            aria-label="Slide 1"
-                        ></button>
-                        <button
-                            type="button"
-                            data-mdb-target="#carouselBasicExample"
-                            data-mdb-slide-to="1"
-                            aria-label="Slide 2"
-                        ></button>
-                        <button
-                            type="button"
-                            data-mdb-target="#carouselBasicExample"
-                            data-mdb-slide-to="2"
-                            aria-label="Slide 3"
-                            ></button>
-                    </div>
-
+            <div className="container" style={photoCarousel}>
+                <div id="carouselExampleAutoplaying" className="carousel slide" data-bs-ride="carousel">
                     <div className="carousel-inner">
                         <div className="carousel-item active">
-                            <img
-                                src="src/assets/images/goat.jpg"
-                                className="d-block w-100 img-fluid"
-                                alt="Goat photo"
-                            />
-                            <div className="carousel-caption d-none d-md-block">
-                                <h5>First slide label</h5>
-                                <p>
-                                Nulla vitae elit libero, a pharetra augue mollis interdum.
-                                </p>
-                            </div>
+                            <img src="..." className="d-block w-100" alt="..."/>
                         </div>
-
-                        <div className="carousel-item">
-                            <img
-                                src="src/assets/images/goat.jpg"
-                                className="d-block w-100 img-fluid"
-                                alt="Canyon at Nigh"
-                            />
-                            <div className="carousel-caption d-none d-md-block">
-                                <h5>Second slide label</h5>
-                                <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div className="carousel-item">
-                            <img
-                                src="src/assets/images/goat.jpg"
-                                className="d-block w-100 img-fluid"
-                                alt="Cliff Above a Stormy Sea"
-                            />
-                            <div className="carousel-caption d-none d-md-block">
-                                <h5>Third slide label</h5>
-                                <p>
-                                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-                                </p>
-                            </div>
-                        </div>
+                    <div className="carousel-item">
+                        <img src="..." className="d-block w-100" alt="..."/>
                     </div>
-
-                    <button
-                        className="carousel-control-prev"
-                        type="button"
-                        data-mdb-target="#carouselBasicExample"
-                        data-mdb-slide="prev"
-                    >
-                        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span className="visually-hidden">Previous</span>
-                    </button>
-                    <button
-                        className="carousel-control-next"
-                        type="button"
-                        data-mdb-target="#carouselBasicExample"
-                        data-mdb-slide="next"
-                    >
-                        <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span className="visually-hidden">Next</span>
-                    </button>
+                    <div className="carousel-item">
+                        <img src="..." className="d-block w-100" alt="..."/>
+                    </div>
                 </div>
-
+                <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span className="visually-hidden">Previous</span>
+                </button>
+                <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span className="visually-hidden">Next</span>
+                </button>
+            </div>
             </div>
             <div className="container" style={{ textAlign: 'center' }}>
                 <h3>Welcome to the Laser Co</h3>
+                <h4>Content...</h4>
             </div>
-            <div className="container" style={{ textAlign: 'center' }}>
+            <div className="container">
                 <Footer />
             </div>
         </div>
