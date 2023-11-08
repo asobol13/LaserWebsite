@@ -20,6 +20,7 @@ function Navigation () {
                     <a className="nav-link" aria-current="page" href="/">Home</a>
                     <a className="nav-link" href="/about">About</a>
                     <a className="nav-link" href="/gallery">Gallery</a>
+                    <a className="nav-link" href="/contactus">Contact Us</a>
                 </div>
                 </div>
             </div>

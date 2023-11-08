@@ -50,7 +50,7 @@ function Home () {
                         <div className="carousel-item active">
                             <img
                                 src="src/assets/images/goat.jpg"
-                                className="d-block w-100"
+                                className="d-block w-100 img-fluid"
                                 alt="Goat photo"
                             />
                             <div className="carousel-caption d-none d-md-block">
@@ -64,7 +64,7 @@ function Home () {
                         <div className="carousel-item">
                             <img
                                 src="src/assets/images/goat.jpg"
-                                className="d-block w-100"
+                                className="d-block w-100 img-fluid"
                                 alt="Canyon at Nigh"
                             />
                             <div className="carousel-caption d-none d-md-block">
@@ -78,7 +78,7 @@ function Home () {
                         <div className="carousel-item">
                             <img
                                 src="src/assets/images/goat.jpg"
-                                className="d-block w-100"
+                                className="d-block w-100 img-fluid"
                                 alt="Cliff Above a Stormy Sea"
                             />
                             <div className="carousel-caption d-none d-md-block">
