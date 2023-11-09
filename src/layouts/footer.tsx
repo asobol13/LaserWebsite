@@ -12,14 +12,15 @@ function Footer () {
         backgroundColor: 'beige',
         height: '100px',
         position: 'relative',
-        zIndex: -2,
+        zIndex: -1,
     };
     const FooterItemStyle = {
         color: '#000000',
+        backgroundColor: 'transparent',
         textDecoration: 'none',
-        transition: 'text-decoration 0.2s',
+        // transition: 'text-decoration 0.2s',
     };
-    //  const content: CSSProperties = {
+    // const galleryContent: CSSProperties = {
     //     width: '960px',
     //     position: 'fixed',
     //     left: '50%',
@@ -30,19 +31,19 @@ function Footer () {
     //     paddingTop: '20px',
     // };
     return (
-        <div className="container" style={{ textAlign: 'center' }}>
-            <footer className="footer" style={FooterMainStyle}>
-                <div className="content has-text-centered" style={FooterStyle}>
-                    <h3>Contact Us!</h3>
-                    <p>
-                        <a
-                            href="mailto:allisonsobol13@gmail.com"
-                            className="footer-item"
-                            style={FooterItemStyle}>Email
-                        </a>
-                    </p>
-                </div>
-            </footer>
+        <div className="container-fluid">
+        <footer className="footer" style={FooterMainStyle}>
+            <div className="py-3" style={FooterStyle}>
+                <h3 style={{ backgroundColor: 'transparent' }}>Contact Us!</h3>
+                <p style={{ backgroundColor: 'transparent' }}>
+                    <a
+                        href="mailto:allisonsobol13@gmail.com"
+                        className="footer-item"
+                        style={FooterItemStyle}>Email
+                    </a>
+                </p>
+            </div>
+        </footer>
         </div>
     );
 };
