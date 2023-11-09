@@ -1,6 +1,5 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import styles from '../assets/navigation.css';
 
 function Navigation () {
     const navStyle = {
@@ -20,7 +19,7 @@ function Navigation () {
                     <a className="nav-link" aria-current="page" href="/">Home</a>
                     <a className="nav-link" href="/about">About</a>
                     <a className="nav-link" href="/gallery">Gallery</a>
-                    <a className="nav-link" href="/contactus">Contact Us</a>
+                    <a className="nav-link" href="/contactUs">Contact Us</a>
                 </div>
                 </div>
             </div>

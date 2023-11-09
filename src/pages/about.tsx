@@ -1,6 +1,7 @@
 import React from 'react';
 // import styles from '../assets/index.css';
 import Navigation from '../layouts/navigation';
+import Footer from '../layouts/footer';
 
 // TODO: Immersive photo slide experience along with good story telling aspect
 
@@ -13,7 +14,7 @@ function About () {
             <div className="container">
                 <h1 style={{ textAlign: 'center' }}>About Page</h1>
             </div>
-            {/* <Footer /> */}
+            <Footer />
         </div>
     );
 }
