@@ -36,9 +36,7 @@ function Gallery () {
                     <div className="col-4"><img src="https://m.media-amazon.com/images/I/61VcdmN8qbL._AC_UF894,1000_QL80_.jpg" className="img-fluid" alt="Responsive image"/></div>
                 </div>
             </div>
-            <div className="container">
-                <Footer />
-            </div>
+            <Footer />
         </div>
     );
 }

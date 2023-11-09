@@ -20,18 +20,8 @@ function Footer () {
         textDecoration: 'none',
         // transition: 'text-decoration 0.2s',
     };
-    // const galleryContent: CSSProperties = {
-    //     width: '960px',
-    //     position: 'fixed',
-    //     left: '50%',
-    //     bottom: 0,
-    //     marginLeft: '-480px',
-    //     zIndex: -1,
-    //     paddingBottom: '20px',
-    //     paddingTop: '20px',
-    // };
     return (
-        <div className="container-fluid">
+        <div className="container-fluid p-0">
         <footer className="footer" style={FooterMainStyle}>
             <div className="py-3" style={FooterStyle}>
                 <h3 style={{ backgroundColor: 'transparent' }}>Contact Us!</h3>

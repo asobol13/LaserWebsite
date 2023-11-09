@@ -15,7 +15,7 @@ const photoCarousel = {
 
 function Home () {
     return (
-        <div className="entire-container">
+        <div className="entire-container" style={{ textAlign: 'center' }}>
             <div className="container">
                 <Navigation />
             </div>
@@ -49,9 +49,7 @@ function Home () {
                 <h3>Welcome to the Laser Co</h3>
                 <h4>Content...</h4>
             </div>
-            <div className="container">
-                <Footer />
-            </div>
+            <Footer />
         </div>
     );
 }
