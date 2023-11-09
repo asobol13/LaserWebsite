@@ -2,6 +2,8 @@ import React from 'react';
 import Navigation from '../layouts/navigation';
 import Footer from '../layouts/footer';
 
+// Add a form here? Possibly for email inquiries
+
 function ContactUs() {
     return (
         <div className="entire-container" style={{ textAlign: 'center' }}>

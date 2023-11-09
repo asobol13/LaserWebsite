@@ -18,12 +18,12 @@ function Footer () {
         color: '#000000',
         backgroundColor: 'transparent',
         textDecoration: 'none',
-        // transition: 'text-decoration 0.2s',
     };
     return (
         <div className="container-fluid p-0">
         <footer className="footer" style={FooterMainStyle}>
             <div className="py-3" style={FooterStyle}>
+                {/* Make a grid for icons and more information */}
                 <h3 style={{ backgroundColor: 'transparent' }}>Contact Us!</h3>
                 <p style={{ backgroundColor: 'transparent' }}>
                     <a

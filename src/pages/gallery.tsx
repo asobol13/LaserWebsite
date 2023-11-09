@@ -1,5 +1,4 @@
 import React from 'react';
-// import styles from '../assets/index.css';
 import Navigation from '../layouts/navigation';
 import Footer from '../layouts/footer';
 

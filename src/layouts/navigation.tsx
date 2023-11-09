@@ -10,6 +10,7 @@ function Navigation () {
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-transparent" style={navStyle}>
             <div className="container-fluid">
+                {/* Add logo here */}
                 <a className="navbar-brand" href="#">LOGO HERE</a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
