@@ -11,7 +11,7 @@ function About () {
                 <Navigation />
             </div>
             <div className="container">
-                <h1 style={{ textAlign: 'center' }}>About Page</h1>
+                <h1 style={{ textAlign: 'center' }}>Who We Are</h1>
             </div>
             <Footer />
         </div>

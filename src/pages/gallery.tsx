@@ -17,7 +17,7 @@ function Gallery () {
                 <Navigation />
             </div>
             <div className="container">
-                <h1 style={{ margin: '20px' }}>Gallery Page</h1>
+                <h1 style={{ margin: '20px' }}>Our Projects</h1>
             </div>
             <div className="gridContainer" style={photoGalleryStyle}>
                 <div className="row">

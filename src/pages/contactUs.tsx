@@ -11,7 +11,7 @@ function ContactUs() {
                 <Navigation />
             </div>
             <div className="container">
-                <h1 style={{ textAlign: 'center' }}>Contact Page</h1>
+                <h1 style={{ textAlign: 'center' }}>Contact Us!</h1>
             </div>
             <Footer />
         </div>
