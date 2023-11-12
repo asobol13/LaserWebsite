@@ -17,7 +17,7 @@ const cardStyle: CSSProperties = {
 
 const formStyle: CSSProperties = {
     backgroundColor: 'transparent',
-}
+};
 
 const textBoxAreaStyle = {
     marginLeft: '100px',

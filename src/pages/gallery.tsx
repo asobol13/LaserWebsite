@@ -5,7 +5,10 @@ import Footer from '../layouts/footer';
 // TODO: A nice looking responsive grid for the photo gallery
 
 const photoGalleryStyle = {
-    margin: '20px',
+    marginTop: '40px',
+    marginBottom: '100px',
+    marginLeft: '5%',
+    marginRight: '5%',
     alignItems: 'center',
     justifyContent: 'center',
 };
@@ -20,7 +23,7 @@ function Gallery () {
                 <h1 style={{ margin: '20px' }}>Our Projects</h1>
             </div>
             <div className="gridContainer" style={photoGalleryStyle}>
-                <div className="row">
+                <div className="row" style={{ marginTop: '20px' }}>
                     <div className="col">
                         <img src="https://m.media-amazon.com/images/I/61VcdmN8qbL._AC_UF894,1000_QL80_.jpg" className="img-fluid" alt="Responsive image"/>
                     </div>
@@ -30,7 +33,7 @@ function Gallery () {
                     <div className="col"><img src="https://m.media-amazon.com/images/I/61VcdmN8qbL._AC_UF894,1000_QL80_.jpg" className="img-fluid" alt="Responsive image"/></div>
                     <div className="col"><img src="https://m.media-amazon.com/images/I/61VcdmN8qbL._AC_UF894,1000_QL80_.jpg" className="img-fluid" alt="Responsive image"/></div>
                 </div>
-                <div className="row">
+                <div className="row" style={{ marginTop: '20px' }}>
                     <div className="col-8"><img src="https://m.media-amazon.com/images/I/61VcdmN8qbL._AC_UF894,1000_QL80_.jpg" className="img-fluid" alt="Responsive image"/></div>
                     <div className="col-4"><img src="https://m.media-amazon.com/images/I/61VcdmN8qbL._AC_UF894,1000_QL80_.jpg" className="img-fluid" alt="Responsive image"/></div>
                 </div>
