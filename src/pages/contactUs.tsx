@@ -34,9 +34,9 @@ function ContactUs() {
             <div className="container">
                 <h1 style={{ textAlign: 'center' }}>Contact Us!</h1>
             </div>
-            <div className="container">
+            <div className="container" style={{ marginTop: '40px', marginBottom: '100px' }}>
                 <div className="card" style={cardStyle}>
-                    <div className="card-body">
+                    <div className="card-body" style={{ backgroundColor: 'transparent'}}>
                     {/* <form> className="needs-validation" novalidate */}
                     <form style={formStyle}>
                         <div className="row" style={{ justifyContent: 'center', marginTop: '20px' }}>
