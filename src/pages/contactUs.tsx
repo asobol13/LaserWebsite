@@ -15,10 +15,6 @@ const cardStyle: CSSProperties = {
     height: '450px',
 };
 
-const formStyle: CSSProperties = {
-    backgroundColor: 'transparent',
-};
-
 const textBoxAreaStyle = {
     marginLeft: '100px',
     marginRight: '100px',
@@ -38,7 +34,7 @@ function ContactUs() {
                 <div className="card" style={cardStyle}>
                     <div className="card-body" style={{ backgroundColor: 'transparent'}}>
                     {/* <form> className="needs-validation" novalidate */}
-                    <form style={formStyle}>
+                    <form>
                         <div className="row" style={{ justifyContent: 'center', marginTop: '20px' }}>
                             <div className="form-group col-md-5">
                                 <label htmlFor="inputFirstName">First Name</label>
@@ -56,12 +52,12 @@ function ContactUs() {
                             </div>
                             <div className="form-group col-md-6">
                                 <label htmlFor="inputPhoneNumber">Phone Number</label>
-                                <input type="tel" className="form-control" id="inputPhoneNumber" placeholder="Phone Number"/>
+                                <input type="tel" className="form-control" id="inputPhoneNumber" placeholder="(xxx) xxx-xxxx"/>
                             </div>
                         </div>
                         <div className="row" style={textBoxAreaStyle}>
                             <label htmlFor="inputTextArea">If you have any questions, let us know below!</label>
-                            <textarea className="form-control" id="inputTextArea"></textarea>
+                            <textarea className="form-control" id="inputTextArea" style={{ height: '150px' }}></textarea>
                         </div>
                         <div className="container" style={{ margin: '20px' }}>
                             <button type="submit" className="btn btn-primary">Submit</button>
