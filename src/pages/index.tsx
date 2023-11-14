@@ -15,7 +15,7 @@ const photoCarousel = {
 
 function Home () {
     return (
-        <div className="entire-container" style={{ textAlign: 'center' }}>
+        <div className="entire-container" style={{ textAlign: 'center', backgroundColor: '#b9e2fa' }}>
             <div className="container">
                 <Navigation />
             </div>
