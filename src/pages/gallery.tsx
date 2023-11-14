@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {CSSProperties} from 'react';
 import Navigation from '../layouts/navigation';
 import Footer from '../layouts/footer';
 

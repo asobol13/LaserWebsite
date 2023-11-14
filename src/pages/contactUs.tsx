@@ -21,9 +21,16 @@ const textBoxAreaStyle = {
     marginTop: '20px',
 };
 
+const containerStyle: CSSProperties = {
+    position: 'relative',
+    zIndex: 1,
+    boxShadow: '0 3px 3px rgba(0,0,0,0.2)',
+    backgroundColor: '#b9e2fa',
+};
+
 function ContactUs() {
     return (
-        <div className="entire-container" style={{ textAlign: 'center', backgroundColor: '#b9e2fa' }}>
+        <div className="entire-container" style={containerStyle}>
             <div className="container">
                 <Navigation />
             </div>

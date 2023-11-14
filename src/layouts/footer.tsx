@@ -4,28 +4,33 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function Footer () {
     const FooterMainStyle: CSSProperties = {
         position: 'relative',
-        zIndex: 1,
+        zIndex: 2,
         boxShadow: '0 3px 3px rgba(0,0,0,0.2)',
         backgroundColor: 'beige',
+        height: '150px',
     };
-    const FooterStyle: CSSProperties = {
-        backgroundColor: 'beige',
-        height: '100px',
-        position: 'relative',
-        zIndex: -1,
+    const ContentStyle: CSSProperties = {
+        width: '960px',
+        position: 'fixed',
+        left: '50%',
+        bottom: 0,
+        marginLeft: '-480px',
+        zIndex: 2,
+        paddingBottom: '20px',
+        paddingTop: '20px',
     };
     const FooterItemStyle = {
         color: '#000000',
-        backgroundColor: 'transparent',
         textDecoration: 'none',
+        zIndex: 1,
     };
+
     return (
         <div className="container-fluid p-0">
         <footer className="footer" style={FooterMainStyle}>
-            <div className="py-3" style={FooterStyle}>
-                {/* Make a grid for icons and more information */}
-                <h3 style={{ backgroundColor: 'transparent' }}>Contact Us!</h3>
-                <p style={{ backgroundColor: 'transparent' }}>
+            <div className="content" style={ContentStyle}>
+                <h3>Contact Us!</h3>
+                <p>
                     <a
                         href="mailto:allisonsobol13@gmail.com"
                         className="footer-item"
