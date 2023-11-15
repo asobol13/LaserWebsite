@@ -1,16 +1,13 @@
 import React, { CSSProperties } from 'react';
 import Navigation from '../layouts/navigation';
 import Footer from '../layouts/footer';
-
-// Add a form here? Possibly for email inquiries
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const cardStyle: CSSProperties = {
     backgroundColor: 'whitesmoke',
     textAlign: 'center',
-    justifyContent: 'center',
-
-    marginLeft: '20%',
-    marginRight: '20%',
+    alignItems: 'center',
+    margin: 'auto',
     width: '800px',
     height: '450px',
 };
