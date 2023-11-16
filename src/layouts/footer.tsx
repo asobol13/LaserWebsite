@@ -26,8 +26,8 @@ function Footer() {
         left: '50%',
         transform: 'translateX(-50%)',
         width: '100%',
-        paddingBottom: '20px',
-        paddingTop: '50px',
+        paddingBottom: '50px',
+        paddingTop: '20px',
         backgroundColor: isScrolled ? 'beige' : 'transparent',
         boxShadow: '0 3px 3px rgba(0,0,0,0.2)',
         transition: 'background-color 0.3s ease-out',
@@ -43,14 +43,32 @@ function Footer() {
         <div className="entire-container">
             <footer className="footer">
                 <div className="wrapper" style={WrapperStyle}>
-                    <h3 style={{ color: isScrolled ? '#000000' : 'transparent' }}>Contact Us!</h3>
-                    <p style={{ color: isScrolled ? '#000000' : 'transparent' }}>
-                        <a
-                            href="mailto:allisonsobol13@gmail.com"
-                            className="footer-item"
-                            style={FooterItemStyle}>Email
-                        </a>
-                    </p>
+                    <div className="container text-center" style={{ color: isScrolled ? '#000000' : 'transparent', maxHeight: '80px' }}>
+                        <div className="row">
+                            <div className="col">
+                                <h4>Column 1</h4>
+                                <hr/>
+                            </div>
+                            <div className="col">
+                                <h4>Column 2</h4>
+                                <hr/>
+                            </div>
+                            <div className="col">
+                                <h4>Contact Us!</h4>
+                                <hr/>
+                                <p>
+                                <a
+                                    href="mailto:allisonsobol13@gmail.com"
+                                    className="footer-item"
+                                    style={FooterItemStyle}>Email
+                                </a>
+                                </p>
+                            </div>
+                        </div>
+                        <div className="row">
+                            <p>@ 2023 Laser</p>
+                        </div>
+                    </div>
                 </div>
             </footer>
         </div>
