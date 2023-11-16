@@ -3,6 +3,11 @@ import Navigation from '../layouts/navigation';
 import Footer from '../layouts/footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+// TODO:
+// 1) Fix the photo carousel
+// 2) Fix the functionality of the delete button
+// 3) Add more content 
+
 const photoCarousel = {
     maxHeight: '400px',
     overflow: 'hidden',
@@ -12,6 +17,13 @@ const photoCarousel = {
 function Home () {
     return (
         <div className="entire-container" style={{ backgroundColor: '#b9e2fa' }}>
+            <div className="alert alert-primary d-flex align-items-center" role="alert">
+                {/* <svg className="bi flex-shrink-0 me-2" role="img" aria-label="Info:"><use xlink:href="#info-fill"/></svg> */}
+                <div>
+                    An example alert with an icon
+                </div>
+                <button type="button" className="btn-close" data-bs-dismiss="alert" aria-label="Close" style={{ marginLeft: '85%' }}></button>
+            </div>
             <div className="container">
                 <Navigation />
             </div>

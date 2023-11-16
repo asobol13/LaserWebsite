@@ -3,6 +3,10 @@ import Navigation from '../layouts/navigation';
 import Footer from '../layouts/footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+// TODO:
+// 1) Add in the laser photos
+// 2) Look for ways to host the images
+
 const photoGalleryStyle = {
     marginTop: '40px',
     marginBottom: '100px',

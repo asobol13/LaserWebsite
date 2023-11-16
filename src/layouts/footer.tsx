@@ -1,6 +1,10 @@
 import React, { CSSProperties } from 'react';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
+// TODO:
+// 1) Fix the z index issue
+// 2) Add in all of the links and information below in grid
+
 function Footer () {
     const FooterMainStyle: CSSProperties = {
         position: 'relative',

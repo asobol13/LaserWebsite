@@ -3,7 +3,9 @@ import Navigation from '../layouts/navigation';
 import Footer from '../layouts/footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-// TODO: Immersive photo slide experience along with good story telling aspect
+// TODO:
+// 1) Add Immersive photo slide experience
+// 2) Add a good story telling aspect
 
 function About () {
     return (

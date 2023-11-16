@@ -3,6 +3,9 @@ import Navigation from '../layouts/navigation';
 import Footer from '../layouts/footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+// TODO:
+// 1) Add any new styling options
+
 const cardStyle: CSSProperties = {
     backgroundColor: 'whitesmoke',
     textAlign: 'center',
