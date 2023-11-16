@@ -2,11 +2,13 @@ import React from 'react';
 import Navigation from '../layouts/navigation';
 import Footer from '../layouts/footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 // TODO:
 // 1) Fix the photo carousel
 // 2) Fix the functionality of the delete button
-// 3) Add more content 
+// 3) Add more content
+// 4) Create color palette 
 
 const photoCarousel = {
     maxHeight: '400px',
@@ -34,13 +36,13 @@ function Home () {
                 <div id="carouselExampleAutoplaying" className="carousel slide" data-bs-ride="carousel">
                     <div className="carousel-inner">
                         <div className="carousel-item active">
-                            <img src="https://m.media-amazon.com/images/I/61VcdmN8qbL._AC_UF894,1000_QL80_.jpg" className="d-block w-100" alt="goat"/>
+                            <img src="https://m.media-amazon.com/images/I/61VcdmN8qbL._AC_UF894,1000_QL80_.jpg" className="d-block w-100" alt="goat photo"/>
                         </div>
                     <div className="carousel-item">
-                        <img src="https://m.media-amazon.com/images/I/61VcdmN8qbL._AC_UF894,1000_QL80_.jpg" className="d-block w-100" alt="..."/>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvN0Kck5LMKLbLjOUfhT44yIK7Huduy7XFvtY3ZoIYNQ&s" className="d-block w-100" alt="squirrel photo"/>
                     </div>
                     <div className="carousel-item">
-                        <img src="https://m.media-amazon.com/images/I/61VcdmN8qbL._AC_UF894,1000_QL80_.jpg" className="d-block w-100" alt="..."/>
+                        <img src="https://www.womansworld.com/wp-content/uploads/2019/09/cute-bunny-in-a-field-of-grass-and-white-flowers.jpg?w=953" className="d-block w-100" alt="bunny photo"/>
                     </div>
                 </div>
                 <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
