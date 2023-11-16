@@ -1,5 +1,8 @@
-// Footer.tsx
 import React, { CSSProperties, useState, useEffect } from 'react';
+
+// TODO:
+// 1) Work on mobile responsiveness
+// 2) Add in links and information
 
 function Footer() {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -16,13 +19,6 @@ function Footer() {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
-
-    // const FooterMainStyle: CSSProperties = {
-    //     backgroundColor: 'beige',
-    //     height: '150px',
-    //     zIndex: 2,
-    //     position: 'relative',
-    // };
 
     const WrapperStyle: CSSProperties = {
         position: 'fixed',
