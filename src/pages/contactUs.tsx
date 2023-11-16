@@ -18,16 +18,9 @@ const textBoxAreaStyle = {
     marginTop: '20px',
 };
 
-const containerStyle: CSSProperties = {
-    backgroundColor: '#b9e2fa',
-    position: 'relative',
-    zIndex: 1,
-    boxShadow: '0 3px 3px rgba(0,0,0,0.2)',
-};
-
 function ContactUs() {
     return (
-        <div className="entire-container" style={containerStyle}>
+        <div className="entire-container" style={{ backgroundColor: '#b9e2fa' }}>
             <div className="container">
                 <Navigation />
             </div>
@@ -36,37 +29,37 @@ function ContactUs() {
             </div>
             <div className="container" style={{ marginTop: '40px', marginBottom: '100px' }}>
                 <div className="card" style={cardStyle}>
-                    <div className="card-body" style={{ backgroundColor: 'transparent'}}>
-                    {/* <form> className="needs-validation" novalidate */}
-                    <form>
-                        <div className="row" style={{ justifyContent: 'center', marginTop: '20px' }}>
-                            <div className="form-group col-md-5">
-                                <label htmlFor="inputFirstName">First Name</label>
-                                <input type="text" className="form-control" id="inputFirstName" placeholder="First Name"/>
+                    <div className="card-body" style={{ backgroundColor: 'transparent' }}>
+                        {/* <form> className="needs-validation" novalidate */}
+                        <form>
+                            <div className="row" style={{ justifyContent: 'center', marginTop: '20px' }}>
+                                <div className="form-group col-md-5">
+                                    <label htmlFor="inputFirstName">First Name</label>
+                                    <input type="text" className="form-control" id="inputFirstName" placeholder="First Name" />
+                                </div>
+                                <div className="form-group col-md-5">
+                                    <label htmlFor="inputLastName">Last Name</label>
+                                    <input type="text" className="form-control" id="inputLastName" placeholder="Last Name" />
+                                </div>
                             </div>
-                            <div className="form-group col-md-5">
-                                <label htmlFor="inputLastName">Last Name</label>
-                                <input type="text" className="form-control" id="inputLastName" placeholder="Last Name"/>
+                            <div className="row" style={{ marginTop: '20px' }}>
+                                <div className="form-group col-md-6">
+                                    <label htmlFor="inputEmail">Email</label>
+                                    <input type="text" className="form-control" id="inputEmail" placeholder="Email" />
+                                </div>
+                                <div className="form-group col-md-6">
+                                    <label htmlFor="inputPhoneNumber">Phone Number</label>
+                                    <input type="tel" className="form-control" id="inputPhoneNumber" placeholder="(xxx) xxx-xxxx" />
+                                </div>
                             </div>
-                        </div>
-                        <div className="row" style={{ marginTop: '20px' }}>
-                            <div className="form-group col-md-6">
-                                <label htmlFor="inputEmail">Email</label>
-                                <input type="text" className="form-control" id="inputEmail" placeholder="Email"/>
+                            <div className="row" style={textBoxAreaStyle}>
+                                <label htmlFor="inputTextArea">If you have any questions, let us know below!</label>
+                                <textarea className="form-control" id="inputTextArea" style={{ height: '150px' }}></textarea>
                             </div>
-                            <div className="form-group col-md-6">
-                                <label htmlFor="inputPhoneNumber">Phone Number</label>
-                                <input type="tel" className="form-control" id="inputPhoneNumber" placeholder="(xxx) xxx-xxxx"/>
+                            <div className="container" style={{ margin: '20px' }}>
+                                <button type="submit" className="btn btn-primary">Submit</button>
                             </div>
-                        </div>
-                        <div className="row" style={textBoxAreaStyle}>
-                            <label htmlFor="inputTextArea">If you have any questions, let us know below!</label>
-                            <textarea className="form-control" id="inputTextArea" style={{ height: '150px' }}></textarea>
-                        </div>
-                        <div className="container" style={{ margin: '20px' }}>
-                            <button type="submit" className="btn btn-primary">Submit</button>
-                        </div>
-                    </form>
+                        </form>
                     </div>
                 </div>
             </div>

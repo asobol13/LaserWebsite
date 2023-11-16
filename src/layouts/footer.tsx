@@ -4,7 +4,7 @@ import React, { CSSProperties } from 'react';
 function Footer () {
     const FooterMainStyle: CSSProperties = {
         position: 'relative',
-        zIndex: -2,
+        zIndex: 2,
         backgroundColor: 'beige',
         height: '150px',
     };
@@ -13,7 +13,7 @@ function Footer () {
         position: 'fixed',
         marginLeft: '25%',
         bottom: 0,
-        zIndex: -2,
+        zIndex: 1,
         paddingBottom: '20px',
         paddingTop: '50px',
     };
@@ -21,8 +21,15 @@ function Footer () {
         color: '#000000',
         textDecoration: 'none',
     };
+    const containerStyle: CSSProperties = {
+        backgroundColor: '#b9e2fa',
+        position: 'relative',
+        zIndex: 0,
+        boxShadow: '0 3px 3px rgba(0,0,0,0.2)',
+    };
 
     return (
+        <div className="entire-container" style={containerStyle}>
         <footer className="footer" style={FooterMainStyle}>
             <div className="content" style={ContentStyle}>
                 <h3>Contact Us!</h3>
@@ -35,6 +42,7 @@ function Footer () {
                 </p>
             </div>
         </footer>
+        </div>
     );
 };
 
