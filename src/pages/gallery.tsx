@@ -13,9 +13,16 @@ const photoGalleryStyle = {
     justifyContent: 'center',
 };
 
+const containerStyle: CSSProperties = {
+    backgroundColor: '#b9e2fa',
+    position: 'relative',
+    zIndex: 1,
+    boxShadow: '0 3px 3px rgba(0,0,0,0.2)',
+};
+
 function Gallery () {
     return (
-        <div className="entire-container" style={{ textAlign: 'center', backgroundColor: '#b9e2fa' }}>
+        <div className="entire-container" style={containerStyle}>
             <div className="container">
                 <Navigation />
             </div>

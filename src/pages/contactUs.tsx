@@ -19,10 +19,10 @@ const textBoxAreaStyle = {
 };
 
 const containerStyle: CSSProperties = {
+    backgroundColor: '#b9e2fa',
     position: 'relative',
     zIndex: 1,
     boxShadow: '0 3px 3px rgba(0,0,0,0.2)',
-    backgroundColor: '#b9e2fa',
 };
 
 function ContactUs() {

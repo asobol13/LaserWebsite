@@ -5,17 +5,17 @@ function Footer () {
     const FooterMainStyle: CSSProperties = {
         position: 'relative',
         zIndex: -2,
-        boxShadow: '0 3px 3px rgba(0,0,0,0.2)',
         backgroundColor: 'beige',
         height: '150px',
     };
     const ContentStyle: CSSProperties = {
         width: '960px',
         position: 'fixed',
+        marginLeft: '25%',
         bottom: 0,
-        zIndex: -1,
+        zIndex: -2,
         paddingBottom: '20px',
-        paddingTop: '20px',
+        paddingTop: '50px',
     };
     const FooterItemStyle: CSSProperties = {
         color: '#000000',
