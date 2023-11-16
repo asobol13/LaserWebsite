@@ -1,8 +1,7 @@
-import React, {CSSProperties} from 'react';
+import React from 'react';
 import Navigation from '../layouts/navigation';
 import Footer from '../layouts/footer';
-
-// TODO: A nice looking responsive grid for the photo gallery
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const photoGalleryStyle = {
     marginTop: '40px',
@@ -22,12 +21,12 @@ const photoGalleryStyle = {
 
 function Gallery () {
     return (
-        <div className="entire-container">
+        <div className="entire-container" style={{ backgroundColor: '#b9e2fa' }}>
             <div className="container">
                 <Navigation />
             </div>
             <div className="container">
-                <h1 style={{ margin: '20px' }}>Our Projects</h1>
+                <h1 style={{ margin: '20px', textAlign: 'center' }}>Our Projects</h1>
             </div>
             <div className="gridContainer" style={photoGalleryStyle}>
                 <div className="row" style={{ marginTop: '20px' }}>
@@ -35,7 +34,7 @@ function Gallery () {
                         <img src="https://m.media-amazon.com/images/I/61VcdmN8qbL._AC_UF894,1000_QL80_.jpg" className="img-fluid" alt="Responsive image"/>
                     </div>
                     <div className="col">
-                    <img src="https://m.media-amazon.com/images/I/61VcdmN8qbL._AC_UF894,1000_QL80_.jpg" className="img-fluid" alt="Responsive image"/>
+                        <img src="https://m.media-amazon.com/images/I/61VcdmN8qbL._AC_UF894,1000_QL80_.jpg" className="img-fluid" alt="Responsive image"/>
                     </div>
                     <div className="col"><img src="https://m.media-amazon.com/images/I/61VcdmN8qbL._AC_UF894,1000_QL80_.jpg" className="img-fluid" alt="Responsive image"/></div>
                     <div className="col"><img src="https://m.media-amazon.com/images/I/61VcdmN8qbL._AC_UF894,1000_QL80_.jpg" className="img-fluid" alt="Responsive image"/></div>

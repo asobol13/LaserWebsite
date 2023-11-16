@@ -1,21 +1,17 @@
 import React from 'react';
 import Navigation from '../layouts/navigation';
 import Footer from '../layouts/footer';
-
-// TODO: Need to figure out the styling and look you want for the brand
-
-// interface HomeProps {
-
-// }
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const photoCarousel = {
-    height: '300px',
+    maxHeight: '400px',
+    overflow: 'hidden',
     alignItems: 'center',
 };
 
 function Home () {
     return (
-        <div className="entire-container" style={{ textAlign: 'center', backgroundColor: '#b9e2fa' }}>
+        <div className="entire-container" style={{ backgroundColor: '#b9e2fa' }}>
             <div className="container">
                 <Navigation />
             </div>
@@ -26,13 +22,13 @@ function Home () {
                 <div id="carouselExampleAutoplaying" className="carousel slide" data-bs-ride="carousel">
                     <div className="carousel-inner">
                         <div className="carousel-item active">
-                            <img src="..." className="d-block w-100" alt="..."/>
+                            <img src="https://m.media-amazon.com/images/I/61VcdmN8qbL._AC_UF894,1000_QL80_.jpg" className="d-block w-100" alt="goat"/>
                         </div>
                     <div className="carousel-item">
-                        <img src="..." className="d-block w-100" alt="..."/>
+                        <img src="https://m.media-amazon.com/images/I/61VcdmN8qbL._AC_UF894,1000_QL80_.jpg" className="d-block w-100" alt="..."/>
                     </div>
                     <div className="carousel-item">
-                        <img src="..." className="d-block w-100" alt="..."/>
+                        <img src="https://m.media-amazon.com/images/I/61VcdmN8qbL._AC_UF894,1000_QL80_.jpg" className="d-block w-100" alt="..."/>
                     </div>
                 </div>
                 <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
