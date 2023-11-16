@@ -28,7 +28,7 @@ function Footer() {
         width: '100%',
         paddingBottom: '50px',
         paddingTop: '20px',
-        backgroundColor: isScrolled ? 'beige' : 'transparent',
+        backgroundColor: isScrolled ? '#A3A3A3' : 'transparent',
         boxShadow: '0 3px 3px rgba(0,0,0,0.2)',
         transition: 'background-color 0.3s ease-out',
         zIndex: 100,

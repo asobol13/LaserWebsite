@@ -17,11 +17,11 @@ const photoCarousel = {
 };
 
 const containerStyle: CSSProperties = {
-    backgroundColor: '#b9e2fa',  // Blue background
+    backgroundColor: '#F75019',  // Blue background
     position: 'relative',
     zIndex: 1,  // Set this to a lower value than the Footer z-index
     boxShadow: '0 3px 3px rgba(0,0,0,0.2)',
-    marginBottom: '150px',
+    marginBottom: '149px',
 };
 
 function Home () {
