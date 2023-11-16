@@ -1,8 +1,7 @@
-import React from 'react';
+import React, {CSSProperties} from 'react';
 import Navigation from '../layouts/navigation';
 import Footer from '../layouts/footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 // TODO:
 // 1) Fix the photo carousel
@@ -11,15 +10,24 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // 4) Create color palette 
 
 const photoCarousel = {
-    maxHeight: '400px',
+    maxHeight: '600px',
+    width: '100%',
     overflow: 'hidden',
     alignItems: 'center',
 };
 
+const containerStyle: CSSProperties = {
+    backgroundColor: '#b9e2fa',  // Blue background
+    position: 'relative',
+    zIndex: 1,  // Set this to a lower value than the Footer z-index
+    boxShadow: '0 3px 3px rgba(0,0,0,0.2)',
+    marginBottom: '150px',
+};
+
 function Home () {
     return (
-        <div className="entire-container" style={{ backgroundColor: '#b9e2fa' }}>
-            <div className="alert alert-primary d-flex align-items-center" role="alert">
+        <div className="entire-container" style={containerStyle}>
+            <div className="alert alert-primary d-flex align-items-center" role="alert" style={{ height: '20px' }}>
                 {/* <svg className="bi flex-shrink-0 me-2" role="img" aria-label="Info:"><use xlink:href="#info-fill"/></svg> */}
                 <div>
                     An example alert with an icon
@@ -29,9 +37,9 @@ function Home () {
             <div className="container">
                 <Navigation />
             </div>
-            <div className="container" style={{ textAlign: 'center' }}>
+            {/* <div className="container" style={{ textAlign: 'center' }}>
                 <h1>Laser Website Name Here</h1>
-            </div>
+            </div> */}
             <div className="container" style={photoCarousel}>
                 <div id="carouselExampleAutoplaying" className="carousel slide" data-bs-ride="carousel">
                     <div className="carousel-inner">
@@ -55,9 +63,9 @@ function Home () {
                 </button>
             </div>
             </div>
-            <div className="container" style={{ textAlign: 'center' }}>
-                <h3>Welcome to the Laser Co</h3>
-                <h4>Content...</h4>
+            <div className="container" style={{ textAlign: 'center', marginTop: '20px' }}>
+                <h1>Welcome to the Laser Co</h1>
+                <h2>Content...</h2>
             </div>
             <Footer />
         </div>

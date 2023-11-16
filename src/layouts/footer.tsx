@@ -1,53 +1,64 @@
-import React, { CSSProperties } from 'react';
-// import 'bootstrap/dist/css/bootstrap.min.css';
+// Footer.tsx
+import React, { CSSProperties, useState, useEffect } from 'react';
 
-// TODO:
-// 1) Fix the z index issue
-// 2) Add in all of the links and information below in grid
+function Footer() {
+    const [isScrolled, setIsScrolled] = useState(false);
 
-function Footer () {
-    const FooterMainStyle: CSSProperties = {
-        position: 'relative',
-        zIndex: 2,
-        backgroundColor: 'beige',
-        height: '150px',
-    };
-    const ContentStyle: CSSProperties = {
-        width: '960px',
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollTop = window.scrollY;
+            setIsScrolled(scrollTop > 0);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
+    // const FooterMainStyle: CSSProperties = {
+    //     backgroundColor: 'beige',
+    //     height: '150px',
+    //     zIndex: 2,
+    //     position: 'relative',
+    // };
+
+    const WrapperStyle: CSSProperties = {
         position: 'fixed',
-        marginLeft: '25%',
         bottom: 0,
-        zIndex: 1,
+        left: '50%',
+        transform: 'translateX(-50%)',
+        width: '100%',
         paddingBottom: '20px',
         paddingTop: '50px',
-    };
-    const FooterItemStyle: CSSProperties = {
-        color: '#000000',
-        textDecoration: 'none',
-    };
-    const containerStyle: CSSProperties = {
-        backgroundColor: '#b9e2fa',
-        position: 'relative',
-        zIndex: 0,
+        backgroundColor: isScrolled ? 'beige' : 'transparent',
         boxShadow: '0 3px 3px rgba(0,0,0,0.2)',
+        transition: 'background-color 0.3s ease-out',
+        zIndex: 100,
+    };
+
+    const FooterItemStyle: CSSProperties = {
+        color: isScrolled ? '#000000' : 'transparent',
+        textDecoration: 'none',
     };
 
     return (
-        <div className="entire-container" style={containerStyle}>
-        <footer className="footer" style={FooterMainStyle}>
-            <div className="content" style={ContentStyle}>
-                <h3>Contact Us!</h3>
-                <p>
-                    <a
-                        href="mailto:allisonsobol13@gmail.com"
-                        className="footer-item"
-                        style={FooterItemStyle}>Email
-                    </a>
-                </p>
-            </div>
-        </footer>
+        <div className="entire-container">
+            <footer className="footer">
+                <div className="wrapper" style={WrapperStyle}>
+                    <h3 style={{ color: isScrolled ? '#000000' : 'transparent' }}>Contact Us!</h3>
+                    <p style={{ color: isScrolled ? '#000000' : 'transparent' }}>
+                        <a
+                            href="mailto:allisonsobol13@gmail.com"
+                            className="footer-item"
+                            style={FooterItemStyle}>Email
+                        </a>
+                    </p>
+                </div>
+            </footer>
         </div>
     );
-};
+}
 
 export default Footer;
