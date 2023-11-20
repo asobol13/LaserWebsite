@@ -1,4 +1,5 @@
 import React, { CSSProperties, useState, useEffect } from 'react';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 // TODO:
 // 1) Work on mobile responsiveness
@@ -48,6 +49,15 @@ function Footer() {
                             <div className="col">
                                 <h4>Column 1</h4>
                                 <hr/>
+                                <a
+                                    href="https://www.instagram.com/your_instagram_account/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="footer-item"
+                                    style={FooterItemStyle}
+                                >
+                                    <i className="fab fa-instagram"></i> Instagram
+                                </a>
                             </div>
                             <div className="col">
                                 <h4>Column 2</h4>

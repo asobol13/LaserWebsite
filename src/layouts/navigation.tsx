@@ -5,7 +5,6 @@ function Navigation () {
     const navStyle = {
         height: '80px',
         fontSize: '24px',
-        marginTop: '-20px',
     };
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-transparent" style={navStyle}>

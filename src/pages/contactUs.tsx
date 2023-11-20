@@ -21,14 +21,26 @@ const textBoxAreaStyle = {
     marginTop: '20px',
 };
 
+const pageStyle: CSSProperties = {
+    backgroundColor: '#b9e2fa',
+    minHeight: '100vh', // Ensure the page takes up at least the height of the viewport
+    display: 'flex',
+    flexDirection: 'column',
+};
+
 function ContactUs() {
     return (
-        <div className="entire-container" style={{ backgroundColor: '#b9e2fa' }}>
+        <div className="entire-container" style={pageStyle}>
             <div className="container">
                 <Navigation />
             </div>
             <div className="container">
-                <h1 style={{ textAlign: 'center' }}>Contact Us!</h1>
+                <h1 style={{ textAlign: 'center', marginBottom: '40px' }}>Contact Us!</h1>
+            </div>
+            <div className="container" style={{ textAlign: 'center' }}>
+                <h2>Let us know how we can help you!</h2>
+                {/* <h4>Phone: textable phone link</h4>
+                <h4>Email: clickableemaillink@example.com</h4> */}
             </div>
             <div className="container" style={{ marginTop: '40px', marginBottom: '100px' }}>
                 <div className="card" style={cardStyle}>
@@ -66,7 +78,7 @@ function ContactUs() {
                     </div>
                 </div>
             </div>
-            <Footer />
+            {/* <Footer /> */}
         </div>
     );
 }

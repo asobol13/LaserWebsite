@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { CSSProperties } from 'react';
 import Navigation from '../layouts/navigation';
 import Footer from '../layouts/footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -8,12 +8,19 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // 2) Look for ways to host the images
 
 const photoGalleryStyle = {
-    marginTop: '40px',
+    marginTop: '10px',
     marginBottom: '100px',
     marginLeft: '5%',
     marginRight: '5%',
     alignItems: 'center',
     justifyContent: 'center',
+};
+
+const pageStyle: CSSProperties = {
+    backgroundColor: '#b9e2fa',
+    minHeight: '100vh', // Ensure the page takes up at least the height of the viewport
+    display: 'flex',
+    flexDirection: 'column',
 };
 
 // const containerStyle: CSSProperties = {
@@ -25,12 +32,12 @@ const photoGalleryStyle = {
 
 function Gallery () {
     return (
-        <div className="entire-container" style={{ backgroundColor: '#b9e2fa' }}>
+        <div className="entire-container" style={pageStyle}>
             <div className="container">
                 <Navigation />
             </div>
             <div className="container">
-                <h1 style={{ margin: '20px', textAlign: 'center' }}>Our Projects</h1>
+                <h1 style={{ margin: '20px', textAlign: 'center' }}>Gallery</h1>
             </div>
             <div className="gridContainer" style={photoGalleryStyle}>
                 <div className="row" style={{ marginTop: '20px' }}>
@@ -48,7 +55,7 @@ function Gallery () {
                     <div className="col-4"><img src="https://m.media-amazon.com/images/I/61VcdmN8qbL._AC_UF894,1000_QL80_.jpg" className="img-fluid" alt="Responsive image"/></div>
                 </div>
             </div>
-            <Footer />
+            {/* <Footer /> */}
         </div>
     );
 }

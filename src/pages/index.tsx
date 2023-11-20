@@ -12,7 +12,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const photoCarousel = {
     maxHeight: '600px',
     width: '100%',
-    overflow: 'hidden',
     alignItems: 'center',
 };
 
@@ -23,6 +22,12 @@ const containerStyle: CSSProperties = {
     boxShadow: '0 3px 3px rgba(0,0,0,0.2)',
     marginBottom: '149px',
 };
+const imageStyle: CSSProperties = {
+    maxHeight: '600px',  // Adjust the height as needed
+    width: '100%',
+    objectFit: 'cover',  // Ensure the entire image is covered
+};
+
 
 function Home () {
     return (
@@ -44,13 +49,13 @@ function Home () {
                 <div id="carouselExampleAutoplaying" className="carousel slide" data-bs-ride="carousel">
                     <div className="carousel-inner">
                         <div className="carousel-item active">
-                            <img src="https://m.media-amazon.com/images/I/61VcdmN8qbL._AC_UF894,1000_QL80_.jpg" className="d-block w-100" alt="goat photo"/>
+                            <img src="https://m.media-amazon.com/images/I/61VcdmN8qbL._AC_UF894,1000_QL80_.jpg" className="d-block w-100" alt="goat photo" style={imageStyle}/>
                         </div>
                     <div className="carousel-item">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvN0Kck5LMKLbLjOUfhT44yIK7Huduy7XFvtY3ZoIYNQ&s" className="d-block w-100" alt="squirrel photo"/>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvN0Kck5LMKLbLjOUfhT44yIK7Huduy7XFvtY3ZoIYNQ&s" className="d-block w-100" alt="squirrel photo" style={imageStyle}/>
                     </div>
                     <div className="carousel-item">
-                        <img src="https://www.womansworld.com/wp-content/uploads/2019/09/cute-bunny-in-a-field-of-grass-and-white-flowers.jpg?w=953" className="d-block w-100" alt="bunny photo"/>
+                        <img src="https://www.womansworld.com/wp-content/uploads/2019/09/cute-bunny-in-a-field-of-grass-and-white-flowers.jpg?w=953" className="d-block w-100" alt="bunny photo" style={imageStyle}/>
                     </div>
                 </div>
                 <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
@@ -67,7 +72,13 @@ function Home () {
                 <h1>Welcome to the Laser Co</h1>
                 <h2>Content...</h2>
             </div>
-            <Footer />
+            <div className="container" style={{ textAlign: 'center', marginTop: '20px' }}>
+                <h2>Another Container</h2>
+            </div>
+            <div className="container" style={{ textAlign: 'center', marginTop: '20px' }}>
+                <h2>Another Container</h2>
+            </div>
+            {/* <Footer /> */}
         </div>
     );
 }
