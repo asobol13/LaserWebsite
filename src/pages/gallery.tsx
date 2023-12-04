@@ -1,6 +1,6 @@
 import React, { CSSProperties } from 'react';
 import Navigation from '../layouts/navigation';
-import Footer from '../layouts/footer';
+import Footer2 from '../layouts/footer2';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 // TODO:
@@ -17,18 +17,11 @@ const photoGalleryStyle = {
 };
 
 const pageStyle: CSSProperties = {
-    backgroundColor: '#b9e2fa',
-    minHeight: '100vh', // Ensure the page takes up at least the height of the viewport
+    backgroundColor: '#BFCBE0',
+    minHeight: '100vh',
     display: 'flex',
     flexDirection: 'column',
 };
-
-// const containerStyle: CSSProperties = {
-//     backgroundColor: '#b9e2fa',
-//     position: 'relative',
-//     zIndex: 1,
-//     boxShadow: '0 3px 3px rgba(0,0,0,0.2)',
-// };
 
 function Gallery () {
     return (
@@ -55,7 +48,7 @@ function Gallery () {
                     <div className="col-4"><img src="https://m.media-amazon.com/images/I/61VcdmN8qbL._AC_UF894,1000_QL80_.jpg" className="img-fluid" alt="Responsive image"/></div>
                 </div>
             </div>
-            {/* <Footer /> */}
+            <Footer2 />
         </div>
     );
 }

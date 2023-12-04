@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const footerStyle: CSSProperties = {
-  backgroundColor: '#A3A3A3',
+  backgroundColor: '#A9B7CC',
   textAlign: 'center',
 };
 
@@ -46,7 +46,7 @@ const Footer2 = () => {
         </div>
         <hr />
         <div className="row">
-          <p>@ Laser Co. 2023</p>
+          <p>Copyright @ Laser Co. 2023</p>
         </div>
       </div>
     </footer>

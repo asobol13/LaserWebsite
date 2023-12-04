@@ -1,7 +1,7 @@
 import React, { CSSProperties, useState } from 'react';
 import Navigation from '../layouts/navigation';
 import { useSpring, animated } from 'react-spring';
-import Footer from '../layouts/footer';
+import Footer2 from '../layouts/footer2';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 // TODO:
@@ -9,7 +9,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // 2) Add a good story telling aspect
 
 const pageStyle: CSSProperties = {
-    backgroundColor: '#b9e2fa',
+    backgroundColor: '#BFCBE0',
     minHeight: '100vh', // Ensure the page takes up at least the height of the viewport
     display: 'flex',
     flexDirection: 'column',

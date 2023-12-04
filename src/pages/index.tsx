@@ -17,7 +17,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 //     alignItems: 'center',
 // };
 
-const containerStyle: CSSProperties = {
+const pageStyle: CSSProperties = {
     backgroundColor: '#BFCBE0',  // Blue background
     position: 'relative',
     zIndex: 1,  // Set this to a lower value than the Footer z-index
@@ -33,7 +33,7 @@ const containerStyle: CSSProperties = {
 
 function Home () {
     return (
-        <div className="entire-container" style={containerStyle}>
+        <div className="entire-container" style={pageStyle}>
             {/* <div className="alert alert-primary d-flex align-items-center" role="alert" style={{ height: '20px' }}>
                     <svg className="bi flex-shrink-0 me-2" role="img" aria-label="Info:"><use xlink:href="#info-fill"/></svg>
                 <div>

@@ -1,11 +1,7 @@
 import React, { CSSProperties } from 'react';
 import Navigation from '../layouts/navigation';
-import Footer from '../layouts/footer';
 import Footer2 from '../layouts/footer2';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
-// TODO:
-// 1) Add any new styling options
 
 const cardStyle: CSSProperties = {
     backgroundColor: 'whitesmoke',
@@ -24,7 +20,7 @@ const textBoxAreaStyle = {
 
 const pageStyle: CSSProperties = {
     backgroundColor: '#BFCBE0',
-    minHeight: '100vh', // Ensure the page takes up at least the height of the viewport
+    minHeight: '100vh',
     display: 'flex',
     flexDirection: 'column',
 };
@@ -40,8 +36,6 @@ function ContactUs() {
             </div>
             <div className="container" style={{ textAlign: 'center' }}>
                 <h2>Let us know how we can help you!</h2>
-                {/* <h4>Phone: textable phone link</h4>
-                <h4>Email: clickableemaillink@example.com</h4> */}
             </div>
             <div className="container" style={{ marginTop: '40px', marginBottom: '100px' }}>
                 <div className="card" style={cardStyle}>
