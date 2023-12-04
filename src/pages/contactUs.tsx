@@ -1,6 +1,7 @@
 import React, { CSSProperties } from 'react';
 import Navigation from '../layouts/navigation';
 import Footer from '../layouts/footer';
+import Footer2 from '../layouts/footer2';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 // TODO:
@@ -22,7 +23,7 @@ const textBoxAreaStyle = {
 };
 
 const pageStyle: CSSProperties = {
-    backgroundColor: '#b9e2fa',
+    backgroundColor: '#BFCBE0',
     minHeight: '100vh', // Ensure the page takes up at least the height of the viewport
     display: 'flex',
     flexDirection: 'column',
@@ -78,7 +79,7 @@ function ContactUs() {
                     </div>
                 </div>
             </div>
-            {/* <Footer /> */}
+            <Footer2 />
         </div>
     );
 }
