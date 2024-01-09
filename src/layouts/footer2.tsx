@@ -3,12 +3,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const footerStyle: CSSProperties = {
-  backgroundColor: '#A9B7CC',
+  backgroundColor: '#909090',
   textAlign: 'center',
+  color: 'black',
 };
 
 const footerItems: CSSProperties = {
-  marginTop: '15px',
+  marginTop: '10px',
+  padding: '5px',
 };
 
 const Footer2 = () => {
@@ -27,6 +29,13 @@ const Footer2 = () => {
               >
                 Email
               </a>
+            </p>
+            <p>Request a Quote</p>
+            <p>Return Policy</p>
+            <p>Give Feedback</p>
+            <p>FAQ's</p>
+            <p><a href="/contactUs" target="_blank" className="nav-link">
+              </a>Contact Us
             </p>
           </div>
           <div className="column col-md-6 col-sm-12">

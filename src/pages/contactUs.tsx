@@ -3,6 +3,14 @@ import Navigation from '../layouts/navigation';
 import Footer2 from '../layouts/footer2';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+const pageStyle: CSSProperties = {
+    backgroundColor: '#00510F',
+    minHeight: '100vh',
+    display: 'flex',
+    flexDirection: 'column',
+    color: 'black',
+};
+
 const cardStyle: CSSProperties = {
     backgroundColor: 'whitesmoke',
     textAlign: 'center',
@@ -16,13 +24,6 @@ const textBoxAreaStyle = {
     marginLeft: '100px',
     marginRight: '100px',
     marginTop: '20px',
-};
-
-const pageStyle: CSSProperties = {
-    backgroundColor: '#BFCBE0',
-    minHeight: '100vh',
-    display: 'flex',
-    flexDirection: 'column',
 };
 
 function ContactUs() {

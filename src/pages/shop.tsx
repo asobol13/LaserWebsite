@@ -13,7 +13,7 @@ const photoGalleryStyle = {
 };
 
 const pageStyle: CSSProperties = {
-    backgroundColor: '#BFCBE0',
+    backgroundColor: '#CCCCCC',
     minHeight: '100vh',
     display: 'flex',
     flexDirection: 'column',

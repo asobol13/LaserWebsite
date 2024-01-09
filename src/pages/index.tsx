@@ -13,7 +13,7 @@ import Footer2 from '../layouts/footer2';
 // 4) Create color palette
 
 const pageStyle: CSSProperties = {
-    backgroundColor: '#BFCBE0',
+    backgroundColor: '#909090',
     minHeight: '100vh',
     display: 'flex',
     flexDirection: 'column',
@@ -23,21 +23,14 @@ const pageStyle: CSSProperties = {
 const panel1Style = {
     backgroundColor: '#FAD02E', // Yellow
     width: '100%',
-    height: '100vh',
+    height: '75vh',
     padding: '20px',
 };
 
 const panel2Style = {
     backgroundColor: '#66BB6A', // Green
     width: '100%',
-    height: '100vh',
-    padding: '20px',
-};
-
-const panel3Style = {
-    backgroundColor: '#4FC3F7', // Blue
-    width: '100%',
-    height: '100vh',
+    height: '250vh',
     padding: '20px',
 };
 
@@ -61,14 +54,6 @@ function Home () {
                 <p>
                     Vestibulum id ligula porta felis euismod semper. Duis mollis, est non commodo luctus,
                     nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec sed odio dui.
-                </p>
-            </div>
-
-            <div className="about-panel panel-3" style={panel3Style}>
-                <h2>Our Values</h2>
-                <p>
-                    Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed consectetur.
-                    Nullam id dolor id nibh ultricies vehicula ut id elit.
                 </p>
             </div>
         <Footer2 />

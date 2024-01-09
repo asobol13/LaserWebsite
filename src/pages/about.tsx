@@ -14,7 +14,7 @@ import Footer2 from '../layouts/footer2';
 //     borderRadius: '8px',
 // };
 const pageStyle: CSSProperties = {
-    backgroundColor: '#BFCBE0',
+    backgroundColor: '#909090',
     minHeight: '100vh',
     display: 'flex',
     flexDirection: 'column',

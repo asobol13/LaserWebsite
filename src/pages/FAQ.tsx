@@ -4,8 +4,7 @@ import Footer2 from '../layouts/footer2';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 // TODO:
-// 1) Add in the laser photos
-// 2) Look for ways to host the images
+// 1) Make into FAQ page
 
 const pageStyle: CSSProperties = {
     backgroundColor: '#909090',
@@ -23,7 +22,7 @@ const photoGalleryStyle = {
     justifyContent: 'center',
 };
 
-function Gallery () {
+function FAQ () {
     return (
         <div className="entire-container" style={pageStyle}>
             <div className="container">
@@ -53,4 +52,4 @@ function Gallery () {
     );
 }
 
-export default Gallery;
+export default FAQ;
