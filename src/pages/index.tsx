@@ -4,64 +4,75 @@ import VideoBanner from '../layouts/videoBanner';
 // import Footer from '../layouts/footer';
 // import Footer2 from '../layouts/footer2';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Footer2 from '../layouts/footer2';
 
 // TODO:
 // 1) Fix the photo carousel
 // 2) Fix the functionality of the delete button
 // 3) Add more content
-// 4) Create color palette 
-
-// const photoCarousel = {
-//     maxHeight: '600px',
-//     width: '100%',
-//     alignItems: 'center',
-// };
+// 4) Create color palette
 
 const pageStyle: CSSProperties = {
-    backgroundColor: '#BFCBE0',  // Blue background
-    position: 'relative',
-    zIndex: 1,  // Set this to a lower value than the Footer z-index
-    boxShadow: '0 3px 3px rgba(0,0,0,0.2)',
-    marginBottom: '149px',
+    backgroundColor: '#BFCBE0',
+    minHeight: '100vh',
+    display: 'flex',
+    flexDirection: 'column',
+    textAlign: 'center',
 };
-// const imageStyle: CSSProperties = {
-//     maxHeight: '600px',  // Adjust the height as needed
-//     width: '100%',
-//     objectFit: 'cover',  // Ensure the entire image is covered
-// };
 
+const panel1Style = {
+    backgroundColor: '#FAD02E', // Yellow
+    width: '100%',
+    height: '100vh',
+    padding: '20px',
+};
+
+const panel2Style = {
+    backgroundColor: '#66BB6A', // Green
+    width: '100%',
+    height: '100vh',
+    padding: '20px',
+};
+
+const panel3Style = {
+    backgroundColor: '#4FC3F7', // Blue
+    width: '100%',
+    height: '100vh',
+    padding: '20px',
+};
 
 function Home () {
     return (
         <div className="entire-container" style={pageStyle}>
-            {/* <div className="alert alert-primary d-flex align-items-center" role="alert" style={{ height: '20px' }}>
-                    <svg className="bi flex-shrink-0 me-2" role="img" aria-label="Info:"><use xlink:href="#info-fill"/></svg>
-                <div>
-                    An example alert with an icon
-                </div>
-                <button type="button" className="btn-close" data-bs-dismiss="alert" aria-label="Close" style={{ marginLeft: '85%' }}></button>
-            </div> */}
-            <div className="container">
-                <Navigation />
-            </div>
-            {/* <div className="container" style={{ textAlign: 'center' }}>
-                <h1>Laser Website Name Here</h1>
-            </div> */}
-            <div className="container">
-                <VideoBanner />
-            </div>
-            <div className="container" style={{ textAlign: 'center', marginTop: '20px' }}>
-                <h1>Welcome to the Laser Co</h1>
-                <h2>Content...</h2>
-            </div>
-            <div className="container" style={{ textAlign: 'center', marginTop: '20px' }}>
-                <h2>Another Container</h2>
-            </div>
-            <div className="container" style={{ textAlign: 'center', marginTop: '20px' }}>
-                <h2>Another Container</h2>
-            </div>
-            {/* <Footer /> */}
+        <div className="container">
+            <Navigation />
         </div>
+            <div className="about-panel panel-1" style={panel1Style}>
+                <h2>Video/Photo display of the new stuff</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero,
+                    a pharetra augue. Vestibulum id ligula porta felis euismod semper. Praesent commodo
+                    cursus magna, vel scelerisque nisl consectetur et.
+                </p>
+            </div>
+
+            <div className="about-panel panel-2" style={panel2Style}>
+                <h2>Meet the Team</h2>
+                <p>
+                    Vestibulum id ligula porta felis euismod semper. Duis mollis, est non commodo luctus,
+                    nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec sed odio dui.
+                </p>
+            </div>
+
+            <div className="about-panel panel-3" style={panel3Style}>
+                <h2>Our Values</h2>
+                <p>
+                    Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed consectetur.
+                    Nullam id dolor id nibh ultricies vehicula ut id elit.
+                </p>
+            </div>
+        <Footer2 />
+    </div>
     );
 }
 

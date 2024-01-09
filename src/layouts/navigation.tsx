@@ -19,6 +19,7 @@ function Navigation () {
                     <a className="nav-link" aria-current="page" href="/">Home</a>
                     <a className="nav-link" href="/about">About</a>
                     <a className="nav-link" href="/gallery">Gallery</a>
+                    <a className="nav-link" href="/shop">Shop</a>
                     <a className="nav-link" href="/contactUs">Contact Us</a>
                 </div>
                 </div>

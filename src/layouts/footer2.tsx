@@ -41,7 +41,12 @@ const Footer2 = () => {
                 Instagram
               </a>
             </p>
-            <p>Sign up for our newsletter here</p>
+            <p>Sign up for our newsletter <a 
+              href="https://media.istockphoto.com/id/523761634/photo/cute-panda-bear-climbing-in-tree.jpg?s=612x612&w=0&k=20&c=TxsmORsbuY1LpxQsc6T8fpWJo7lBwncciYhroAr8rXI="
+              target="_blank"
+              className="footer-item"
+              >here</a>
+            </p>
           </div>
         </div>
         <hr />

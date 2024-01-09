@@ -26,6 +26,8 @@ const pageStyle: CSSProperties = {
 };
 
 function ContactUs() {
+    // on submit -- make sure no spam and messages
+    // formik helpers
     return (
         <div className="entire-container" style={pageStyle}>
             <div className="container">

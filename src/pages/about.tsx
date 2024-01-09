@@ -3,42 +3,51 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Navigation from '../layouts/navigation';
 import Footer2 from '../layouts/footer2';
 
-const aboutContainerStyle: CSSProperties = {
+// const aboutContainerStyle: CSSProperties = {
+//     display: 'flex',
+//     flexDirection: 'column',
+//     alignItems: 'center',
+//     width: '100%',
+//     padding: '20px',
+//     margin: '20px 0',
+//     border: '1px solid #ddd',
+//     borderRadius: '8px',
+// };
+const pageStyle: CSSProperties = {
+    backgroundColor: '#BFCBE0',
+    minHeight: '100vh',
     display: 'flex',
     flexDirection: 'column',
-    alignItems: 'center',
-};
-
-const aboutPanelStyle = {
-    width: '80%',
-    padding: '20px',
-    margin: '20px 0',
-    border: '1px solid #ddd',
-    borderRadius: '8px',
-    opacity: 0,
-    transform: 'translateY(20px)',
-    transition: 'opacity 0.5s, transform 0.5s',
+    textAlign: 'center',
 };
 
 const panel1Style = {
     backgroundColor: '#FAD02E', // Yellow
+    width: '100%',
+    height: '100vh',
+    padding: '20px',
 };
 
 const panel2Style = {
     backgroundColor: '#66BB6A', // Green
+    width: '100%',
+    height: '100vh',
+    padding: '20px',
 };
 
 const panel3Style = {
     backgroundColor: '#4FC3F7', // Blue
+    width: '100%',
+    height: '100vh',
+    padding: '20px',
 };
 
 const AboutPage = () => {
   return (
-    <div className="entire-container">
+    <div className="entire-container" style={pageStyle}>
         <div className="container">
             <Navigation />
         </div>
-        <div className="aboutContainer" style={aboutPanelStyle}>
             <div className="about-panel panel-1" style={panel1Style}>
                 <h2>Our Story</h2>
                 <p>
@@ -63,7 +72,6 @@ const AboutPage = () => {
                     Nullam id dolor id nibh ultricies vehicula ut id elit.
                 </p>
             </div>
-        </div>
         <Footer2 />
     </div>
   );
