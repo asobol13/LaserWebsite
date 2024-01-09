@@ -8,10 +8,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // 2) Look for ways to host the images
 
 const pageStyle: CSSProperties = {
-    backgroundColor: '#909090',
+    backgroundColor: '#CCCCCC',
     minHeight: '100vh',
     display: 'flex',
     flexDirection: 'column',
+    paddingBottom: '270px',
 };
 
 const photoGalleryStyle = {

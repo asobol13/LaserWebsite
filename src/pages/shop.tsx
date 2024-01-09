@@ -17,6 +17,7 @@ const pageStyle: CSSProperties = {
     minHeight: '100vh',
     display: 'flex',
     flexDirection: 'column',
+    paddingBottom: '270px',
 };
 
 function Shop() {

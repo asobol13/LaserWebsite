@@ -13,11 +13,12 @@ import Footer2 from '../layouts/footer2';
 // 4) Create color palette
 
 const pageStyle: CSSProperties = {
-    backgroundColor: '#909090',
+    backgroundColor: '#66BB6A',
     minHeight: '100vh',
     display: 'flex',
     flexDirection: 'column',
     textAlign: 'center',
+    paddingBottom: '270px',
 };
 
 const panel1Style = {
@@ -50,7 +51,7 @@ function Home () {
             </div>
 
             <div className="about-panel panel-2" style={panel2Style}>
-                <h2>Meet the Team</h2>
+                <h2>Additional Information</h2>
                 <p>
                     Vestibulum id ligula porta felis euismod semper. Duis mollis, est non commodo luctus,
                     nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec sed odio dui.
