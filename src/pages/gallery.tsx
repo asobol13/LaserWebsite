@@ -3,12 +3,15 @@ import Navigation from '../layouts/navigation';
 import Footer2 from '../layouts/footer2';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+// TODO:
+// 1) Add in the photos for the gallery
+
 const pageStyle: CSSProperties = {
     backgroundColor: '#CCCCCC',
     minHeight: '100vh',
     display: 'flex',
     flexDirection: 'column',
-    paddingBottom: '350px',
+    paddingBottom: '270px',
 };
 
 const photoGalleryStyle = {
