@@ -9,7 +9,7 @@ const pageStyle: CSSProperties = {
     display: 'flex',
     flexDirection: 'column',
     // Fix the footer
-    paddingBottom: '370px',
+    paddingBottom: '270px',
 };
 
 const photoGalleryStyle = {

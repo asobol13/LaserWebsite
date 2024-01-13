@@ -1,16 +1,12 @@
 import React, {CSSProperties} from 'react';
 import Navigation from '../layouts/navigation';
 import VideoBanner from '../layouts/videoBanner';
-// import Footer from '../layouts/footer';
-// import Footer2 from '../layouts/footer2';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer2 from '../layouts/footer2';
 
 // TODO:
 // 1) Fix the photo carousel
-// 2) Fix the functionality of the delete button
-// 3) Add more content
-// 4) Create color palette
+// 2) Add more content
 
 const pageStyle: CSSProperties = {
     backgroundColor: '#66BB6A',
@@ -19,11 +15,11 @@ const pageStyle: CSSProperties = {
     flexDirection: 'column',
     textAlign: 'center',
     // Fix the footer
-    paddingBottom: '370px',
+    paddingBottom: '270px',
 };
 
 const panel1Style = {
-    backgroundColor: '#FAD02E', // Yellow
+    backgroundColor: 'yellow',
     width: '100%',
     height: '75vh',
     padding: '20px',
@@ -43,12 +39,13 @@ function Home () {
             <Navigation />
         </div>
             <div className="about-panel panel-1" style={panel1Style}>
-                <h2>Video/Photo display of the new stuff</h2>
+                <VideoBanner />
+                {/* <h2>Video/Photo display of the new stuff</h2>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero,
                     a pharetra augue. Vestibulum id ligula porta felis euismod semper. Praesent commodo
                     cursus magna, vel scelerisque nisl consectetur et.
-                </p>
+                </p> */}
             </div>
 
             <div className="about-panel panel-2" style={panel2Style}>
