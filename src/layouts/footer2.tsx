@@ -38,6 +38,14 @@ const verticalLineStyle: CSSProperties = {
   marginRight: '5px', // Adjust as needed
 };
 
+// const textBoxStyle: CSSProperties = {
+//   width: '300px',
+// };
+
+// const subscribeStyle: CSSProperties = {
+//   alignItems: 'center',
+// };
+
 const Footer2 = () => {
   const [visible, setVisible] = useState(false);
 
@@ -116,9 +124,15 @@ const Footer2 = () => {
                   Instagram
                 </a>
               </p>
-              <p>Sign up for our newsletter</p>
-              <input type="email" placeholder="Enter your email" />
-              <button>Subscribe</button>
+              <div className="container mt-4">
+                <form>
+                  <div className="form-group col-sm-6 mx-auto">
+                    <p>Sign up for our newsletter</p>
+                    <input type="email" className="form-control" id="email" placeholder="Enter your email" />
+                  </div>
+                  <button type="submit" className="btn btn-danger mt-3">Subscribe</button>
+                </form>
+              </div>
             </div>
           </div>
         </div>
