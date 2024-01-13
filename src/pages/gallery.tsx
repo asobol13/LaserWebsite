@@ -3,16 +3,12 @@ import Navigation from '../layouts/navigation';
 import Footer2 from '../layouts/footer2';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-// TODO:
-// 1) Add in the laser photos
-// 2) Look for ways to host the images
-
 const pageStyle: CSSProperties = {
     backgroundColor: '#CCCCCC',
     minHeight: '100vh',
     display: 'flex',
     flexDirection: 'column',
-    paddingBottom: '270px',
+    paddingBottom: '350px',
 };
 
 const photoGalleryStyle = {

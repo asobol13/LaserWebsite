@@ -3,12 +3,17 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Navigation from '../layouts/navigation';
 import Footer2 from '../layouts/footer2';
 
+// TODO:
+// 1) Get proper photos on panels
+// 2) Get a banner photo
+// 3) Finish the writing segments
+
 const pageStyle: CSSProperties = {
     backgroundColor: '#66BB6A',
     minHeight: '100vh',
     display: 'flex',
     flexDirection: 'column',
-    paddingBottom: '270px',
+    paddingBottom: '350px',
 };
 
 const panelStyle: CSSProperties = {
@@ -56,7 +61,7 @@ const bannerContainerStyle: CSSProperties = {
     height: '50vh',
 };
 
-const AboutPage = () => {
+function AboutPage () {
   return (
     <div className="entire-container" style={pageStyle}>
         <div className="container">
@@ -65,40 +70,39 @@ const AboutPage = () => {
         <div className="panel-container" style={panelContainerStyle}>
             <div className="panel panel-2" style={{ ...panelStyle, ...panelTextStyle }}>
                 <h2>Our Story</h2>
-                <p>
-                    Vestibulum id ligula porta felis euismod semper. Duis mollis, est non commodo luctus,
-                    nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec sed odio dui.
-                </p>
-                {/* Add content for panel 2 */}
+                <h5>
+                    The Laser Business started when Eric.... After selling his products to his
+                    clients from his other business as a pilot, he began getting more interest
+                    in his engraving work. Eventually he.... His daughter Allison started working
+                    the laser and helping to create graphics..
+                </h5>
             </div>
             <div className="panel panel-1" style={{ ...panelStyle, ...panel1Style }}>
-                {/* Add content for panel 1 */}
+                {/* Panel 1 photo */}
             </div>
             </div>
         <div className="panel-container" style={panelContainerStyle}>
             <div className="panel panel-1" style={{ ...panelStyle, ...panel3Style }}>
-                {/* Add content for panel 1 */}
+                {/* Panel 2 photo */}
             </div>
             <div className="panel panel-2" style={{ ...panelStyle, ...panelTextStyle }}>
                 <h2>Meet the Team</h2>
-                <p>
-                    Vestibulum id ligula porta felis euismod semper. Duis mollis, est non commodo luctus,
-                    nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec sed odio dui.
-                </p>
-                {/* Add content for panel 2 */}
+                <h5>
+                    Our team consists of Eric, Allison,... Eric is the Owner and CEO of
+                    the business. Allison is the President....
+                </h5>
             </div>
         </div>
         <div className="panel-container" style={panelContainerStyle}>
             <div className="panel panel-2" style={{ ...panelStyle, ...panelTextStyle }}>
                 <h2>Our Values</h2>
-                <p>
-                    Vestibulum id ligula porta felis euismod semper. Duis mollis, est non commodo luctus,
-                    nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec sed odio dui.
-                </p>
-                {/* Add content for panel 2 */}
+                <h5>
+                    Here at ... we value quality work. We take and make sure that each graphic
+                    we engrave onto our products are crisp and ....
+                </h5>
             </div>
             <div className="panel panel-1" style={{ ...panelStyle, ...panel1Style }}>
-                {/* Add content for panel 1 */}
+                {/* Panel 3 photo */}
             </div>
         </div>
         <div className="panel-container" style={bannerContainerStyle}>

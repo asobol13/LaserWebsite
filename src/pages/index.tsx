@@ -18,7 +18,8 @@ const pageStyle: CSSProperties = {
     display: 'flex',
     flexDirection: 'column',
     textAlign: 'center',
-    paddingBottom: '270px',
+    // Fix the footer
+    paddingBottom: '370px',
 };
 
 const panel1Style = {

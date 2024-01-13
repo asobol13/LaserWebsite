@@ -3,6 +3,15 @@ import Navigation from '../layouts/navigation';
 import Footer2 from '../layouts/footer2';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+const pageStyle: CSSProperties = {
+    backgroundColor: '#CCCCCC',
+    minHeight: '100vh',
+    display: 'flex',
+    flexDirection: 'column',
+    // Fix the footer
+    paddingBottom: '370px',
+};
+
 const photoGalleryStyle = {
     marginTop: '10px',
     marginBottom: '100px',
@@ -12,15 +21,7 @@ const photoGalleryStyle = {
     justifyContent: 'center',
 };
 
-const pageStyle: CSSProperties = {
-    backgroundColor: '#CCCCCC',
-    minHeight: '100vh',
-    display: 'flex',
-    flexDirection: 'column',
-    paddingBottom: '270px',
-};
-
-function Shop() {
+function Shop () {
     return (
         <div className="entire-container" style={pageStyle}>
             <div className="container">
