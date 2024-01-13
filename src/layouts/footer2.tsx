@@ -72,13 +72,29 @@ const Footer2 = () => {
                     Email
                   </a>
                 </p>
-                <p>Request a Quote</p>
-                <p>Return Policy</p>
+                <p>
+                  <a href="/requestQuote" target="_blank" className="nav-link">
+                    Request a Quote
+                  </a>
+                </p>
+                <p>
+                  <a href="/returnPolicy" target="_blank" className="nav-link">
+                    Return Policy
+                  </a>
+                </p>
               </div>
               <div style={verticalLineStyle}></div>
               <div className="column" style={columnStyle}>
-                <p>Give Feedback</p>
-                <p>FAQ's</p>
+                <p>
+                  <a href="/feedback" target="_blank" className="nav-link">
+                    Give Feedback
+                  </a>
+                </p>
+                <p>
+                  <a href="/FAQ" target="_blank" className="nav-link">
+                    FAQ's
+                  </a>
+                </p>
                 <p>
                   <a href="/contactUs" target="_blank" className="nav-link">
                     Contact Us

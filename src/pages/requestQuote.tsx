@@ -27,7 +27,7 @@ const textBoxAreaStyle = {
     marginTop: '20px',
 };
 
-function ContactUs() {
+function Quote() {
     // on submit -- make sure no spam and messages
     // formik helpers
     return (
@@ -82,4 +82,4 @@ function ContactUs() {
     );
 }
 
-export default ContactUs;
+export default Quote;

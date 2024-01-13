@@ -3,49 +3,39 @@ import Navigation from '../layouts/navigation';
 import Footer2 from '../layouts/footer2';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-// TODO:
-// 1) Make into FAQ page
-
 const pageStyle: CSSProperties = {
-    backgroundColor: '#909090',
+    backgroundColor: '#CCCCCC',
     minHeight: '100vh',
     display: 'flex',
     flexDirection: 'column',
+    color: 'black',
+    paddingBottom: '500px',
 };
 
-const photoGalleryStyle = {
-    marginTop: '10px',
+const faqsStyle: CSSProperties = {
+    marginTop: '40px',
     marginBottom: '100px',
-    marginLeft: '5%',
-    marginRight: '5%',
-    alignItems: 'center',
-    justifyContent: 'center',
+    textAlign: 'center',
+
 };
 
-function FAQ () {
+function FAQ() {
     return (
         <div className="entire-container" style={pageStyle}>
             <div className="container">
                 <Navigation />
             </div>
             <div className="container">
-                <h1 style={{ margin: '20px', textAlign: 'center' }}>Gallery</h1>
+                <h1 style={{ textAlign: 'center', marginTop: '100px' }}>Frequently Asked Questions</h1>
             </div>
-            <div className="gridContainer" style={photoGalleryStyle}>
-                <div className="row" style={{ marginTop: '20px' }}>
-                    <div className="col">
-                        <img src="https://m.media-amazon.com/images/I/61VcdmN8qbL._AC_UF894,1000_QL80_.jpg" className="img-fluid" alt="Responsive image"/>
-                    </div>
-                    <div className="col">
-                        <img src="https://m.media-amazon.com/images/I/61VcdmN8qbL._AC_UF894,1000_QL80_.jpg" className="img-fluid" alt="Responsive image"/>
-                    </div>
-                    <div className="col"><img src="https://m.media-amazon.com/images/I/61VcdmN8qbL._AC_UF894,1000_QL80_.jpg" className="img-fluid" alt="Responsive image"/></div>
-                    <div className="col"><img src="https://m.media-amazon.com/images/I/61VcdmN8qbL._AC_UF894,1000_QL80_.jpg" className="img-fluid" alt="Responsive image"/></div>
-                </div>
-                <div className="row" style={{ marginTop: '20px' }}>
-                    <div className="col-8"><img src="https://m.media-amazon.com/images/I/61VcdmN8qbL._AC_UF894,1000_QL80_.jpg" className="img-fluid" alt="Responsive image"/></div>
-                    <div className="col-4"><img src="https://m.media-amazon.com/images/I/61VcdmN8qbL._AC_UF894,1000_QL80_.jpg" className="img-fluid" alt="Responsive image"/></div>
-                </div>
+            <div className="container" style={faqsStyle}>
+                <ul>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                    <li>Item 4</li>
+                    <li>Item 5</li>
+                </ul>
             </div>
             <Footer2 />
         </div>
