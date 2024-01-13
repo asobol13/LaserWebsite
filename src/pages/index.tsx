@@ -14,8 +14,6 @@ const pageStyle: CSSProperties = {
     display: 'flex',
     flexDirection: 'column',
     textAlign: 'center',
-    // Fix the footer
-    paddingBottom: '270px',
 };
 
 const panel1Style = {
@@ -30,6 +28,7 @@ const panel2Style = {
     width: '100%',
     height: '250vh',
     padding: '20px',
+    marginBottom: '260px',
 };
 
 function Home () {
