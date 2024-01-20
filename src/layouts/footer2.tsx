@@ -124,7 +124,7 @@ const Footer2 = () => {
                   Instagram
                 </a>
               </p>
-              <div className="container mt-4">
+              <div className="container">
                 <form>
                   <div className="form-group col-sm-6 mx-auto">
                     <p>Sign up for our newsletter</p>
