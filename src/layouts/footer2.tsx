@@ -81,11 +81,6 @@ const Footer2 = () => {
                   </a>
                 </p>
                 <p>
-                  <a href="/requestQuote" target="_blank" className="nav-link">
-                    Request a Quote
-                  </a>
-                </p>
-                <p>
                   <a href="/returnPolicy" target="_blank" className="nav-link">
                     Return Policy
                   </a>
@@ -93,11 +88,6 @@ const Footer2 = () => {
               </div>
               <div style={verticalLineStyle}></div>
               <div className="column" style={columnStyle}>
-                <p>
-                  <a href="/feedback" target="_blank" className="nav-link">
-                    Give Feedback
-                  </a>
-                </p>
                 <p>
                   <a href="/FAQ" target="_blank" className="nav-link">
                     FAQ's
