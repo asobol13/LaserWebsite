@@ -49,11 +49,6 @@ function Navigation() {
             <span className="navbar-toggler-icon"></span>
             </button>
             <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div className="navbar-nav">
-                    <a className="nav-link" aria-current="page" href="/">
-                    Home
-                    </a>
-                </div>
             </div>
         </div>
     </nav>

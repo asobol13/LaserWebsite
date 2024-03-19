@@ -4,9 +4,6 @@ import VideoBanner from "../layouts/videoBanner";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Footer2 from "../layouts/footer2";
 
-// TODO:
-// 1) Fix the photo carousel
-
 const pageStyle: CSSProperties = {
   backgroundColor: "#edf5ee",
   minHeight: "100vh",
