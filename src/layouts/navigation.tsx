@@ -6,7 +6,7 @@ function Navigation() {
   const [visible, setVisible] = useState(true);
 
   const handleScroll = () => {
-    const currentScrollPos = window.pageYOffset;
+    const currentScrollPos = window.scrollY;
 
     setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 10);
 

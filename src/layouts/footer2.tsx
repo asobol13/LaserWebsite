@@ -1,50 +1,38 @@
-import React, { CSSProperties, useEffect, useState } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import '@fortawesome/fontawesome-free/css/all.min.css';
+import React, { CSSProperties, useEffect, useState } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const footerStyle: CSSProperties = {
-  backgroundColor: '#909090',
-  textAlign: 'center',
-  color: 'black',
-  position: 'fixed',
+  backgroundColor: "#457d4c",
+  textAlign: "center",
+  color: "black",
+  position: "fixed",
   bottom: 0,
   left: 0,
-  width: '100%',
+  width: "100%",
   zIndex: 1000,
-  transform: 'translateY(100%)', // Initially off-screen
-  transition: 'transform 0.25s ease-out', // Add transition for smooth movement
-};
-
-const footerItems: CSSProperties = {
-  marginTop: '10px',
-  padding: '5px',
+  transform: "translateY(100%)", // Initially off-screen
+  transition: "transform 0.25s ease-out", // Add transition for smooth movement
 };
 
 const customerServiceLinks: CSSProperties = {
-  display: 'flex',
-  justifyContent: 'center',
-  marginBottom: '20px',
-  height: '110px',
+  display: "flex",
+  justifyContent: "center",
+  marginBottom: "20px",
+  height: "110px",
 };
 
 const columnStyle: CSSProperties = {
-  textAlign: 'center', // Center text within each column
-  margin: '0 20px', // Add margin for separation between columns
+  textAlign: "center", // Center text within each column
+  margin: "0 20px", // Add margin for separation between columns
+  color: "black",
 };
 
 const verticalLineStyle: CSSProperties = {
-  borderLeft: '1px solid #666', // Adjust color as needed
-  height: '100%',
-  marginRight: '5px', // Adjust as needed
+  borderLeft: "1px solid black", // Adjust color as needed
+  height: "100%",
+  marginRight: "5px", // Adjust as needed
 };
-
-// const textBoxStyle: CSSProperties = {
-//   width: '300px',
-// };
-
-// const subscribeStyle: CSSProperties = {
-//   alignItems: 'center',
-// };
 
 const Footer2 = () => {
   const [visible, setVisible] = useState(false);
@@ -59,16 +47,54 @@ const Footer2 = () => {
       setVisible(scrollPosition + windowHeight >= documentHeight);
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
+  const FooterItem = ({ href, text }: { href: string; text: string }) => {
+    const [isHovered, setIsHovered] = useState(false);
+
+    const handleMouseEnter = () => {
+      setIsHovered(true);
+    };
+
+    const handleMouseLeave = () => {
+      setIsHovered(false);
+    };
+
+    const footerItemStyle: CSSProperties = {
+      marginTop: "10px",
+      padding: "5px",
+      textDecoration: isHovered ? "underline" : "none",
+      color: "black", // Ensure color is set to black
+    };
+
+    return (
+      <a
+        href={href}
+        target="_blank"
+        className="footer-item"
+        style={footerItemStyle}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+      >
+        {text}
+      </a>
+    );
+  };
+
   return (
-    <footer className="footer" style={{ ...footerStyle, transform: visible ? 'translateY(0)' : 'translateY(100%)' }}>
-      <div className="container" style={footerItems}>
+    <footer
+      className="footer"
+      style={{
+        ...footerStyle,
+        transform: visible ? "translateY(0)" : "translateY(100%)",
+      }}
+    >
+      <div className="container">
         <div className="row">
           <div className="column col-md-6 col-sm-12">
             <h3>Customer Service</h3>
@@ -76,51 +102,53 @@ const Footer2 = () => {
               <div className="column" style={columnStyle}>
                 <p>
                   <i className="far fa-envelope"></i>&nbsp;
-                  <a href="mailto:allisonsobol13@gmail.com" target="_blank" className="footer-item">
-                    Email
-                  </a>
+                  <FooterItem href="mailto:allisonsobol13@gmail.com" text="Email" />
                 </p>
                 <p>
-                  <a href="/returnPolicy" target="_blank" className="nav-link">
-                    Return Policy
-                  </a>
+                  <FooterItem href="/returnPolicy" text="Return Policy" />
                 </p>
               </div>
               <div style={verticalLineStyle}></div>
               <div className="column" style={columnStyle}>
                 <p>
-                  <a href="/FAQ" target="_blank" className="nav-link">
-                    FAQ's
-                  </a>
+                  <FooterItem href="/FAQ" text="FAQ's" />
                 </p>
                 <p>
-                  <a href="/contactUs" target="_blank" className="nav-link">
-                    Contact Us
-                  </a>
+                  <FooterItem href="/contactUs" text="Contact Us" />
                 </p>
               </div>
             </div>
           </div>
           <div className="column col-md-6 col-sm-12">
-            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+              }}
+            >
               <h3>Follow Us</h3>
               <p>
                 <i className="fab fa-instagram"></i>&nbsp;
-                <a
+                <FooterItem
                   href="https://www.instagram.com/your_instagram_account/"
-                  target="_blank"
-                  className="footer-item"
-                >
-                  Instagram
-                </a>
+                  text="Instagram"
+                />
               </p>
               <div className="container">
                 <form>
                   <div className="form-group col-sm-6 mx-auto">
                     <p>Sign up for our newsletter</p>
-                    <input type="email" className="form-control" id="email" placeholder="Enter your email" />
+                    <input
+                      type="email"
+                      className="form-control"
+                      id="email"
+                      placeholder="Enter your email"
+                    />
                   </div>
-                  <button type="submit" className="btn btn-danger mt-3">Subscribe</button>
+                  <button type="submit" className="btn btn-danger mt-3">
+                    Subscribe
+                  </button>
                 </form>
               </div>
             </div>
