@@ -4,7 +4,7 @@ import Footer2 from "../layouts/footer2";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const pageStyle: CSSProperties = {
-  backgroundColor: "#CCCCCC",
+  backgroundColor: "#edf5ee",
   minHeight: "100vh",
   display: "flex",
   flexDirection: "column",
@@ -13,7 +13,7 @@ const pageStyle: CSSProperties = {
 };
 
 const cardStyle: CSSProperties = {
-  backgroundColor: "whitesmoke",
+  backgroundColor: "#f5f5f5",
   textAlign: "center",
   alignItems: "center",
   margin: "auto",

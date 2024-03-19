@@ -7,6 +7,7 @@ const footerStyle: CSSProperties = {
   textAlign: "center",
   color: "black",
   position: "fixed",
+  paddingTop: '20px',
   bottom: 0,
   left: 0,
   width: "100%",

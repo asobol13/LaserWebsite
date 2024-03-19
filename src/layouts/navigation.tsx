@@ -20,6 +20,13 @@ function Navigation() {
     };
   }, [prevScrollPos, visible]);
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth' // Add smooth scrolling behavior
+    });
+  };
+
   const navStyle: CSSProperties = {
     height: '80px',
     fontSize: '24px',
@@ -32,25 +39,28 @@ function Navigation() {
 
   return (
     <nav className="navbar navbar-expand-lg navbar-light" style={navStyle}>
-        <div className="container-fluid">
-            {/* Add logo here */}
-            <a className="navbar-brand" href="#">
-                LOGO HERE
-            </a>
-            <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-            >
-            <span className="navbar-toggler-icon"></span>
-            </button>
-            <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-            </div>
+      <div className="container-fluid">
+        {/* Add logo here */}
+        <a className="navbar-brand" href="#" onClick={scrollToTop}>
+          LOGO HERE
+        </a>
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div className="navbar-nav">
+            <a className="nav-link" href="/">Home</a>
+          </div>
         </div>
+      </div>
     </nav>
   );
 }

@@ -4,7 +4,7 @@ import Footer2 from '../layouts/footer2';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const pageStyle: CSSProperties = {
-    backgroundColor: '#CCCCCC',
+    backgroundColor: '#edf5ee',
     minHeight: '100vh',
     display: 'flex',
     flexDirection: 'column',
