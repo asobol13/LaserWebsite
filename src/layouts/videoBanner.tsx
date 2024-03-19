@@ -17,7 +17,7 @@ function VideoBanner() {
     <div className="entire-container">
       <div className="banner" style={banner}>
         <video autoPlay loop muted style={video}>
-          <source src='public/images/laservideoexample.mp4' type="video/mp4" />
+          <source src='/images/laservideoexample.mp4' type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
