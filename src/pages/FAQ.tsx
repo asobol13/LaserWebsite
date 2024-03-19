@@ -9,7 +9,7 @@ const pageStyle: CSSProperties = {
     display: 'flex',
     flexDirection: 'column',
     color: 'black',
-    paddingBottom: '500px',
+    paddingBottom: '270px',
 };
 
 const faqsStyle: CSSProperties = {

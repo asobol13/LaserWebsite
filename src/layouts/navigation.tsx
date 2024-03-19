@@ -53,9 +53,6 @@ function Navigation() {
                     <a className="nav-link" aria-current="page" href="/">
                     Home
                     </a>
-                    <a className="nav-link" href="/gallery">
-                    Gallery
-                    </a>
                 </div>
             </div>
         </div>
