@@ -5,7 +5,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Footer2 from "../layouts/footer2";
 
 // TODO:
-// 1) Create a better laser video
+// 1) Create a better laser video & videos
+// 2) Logo for site
 
 const pageStyle: CSSProperties = {
   backgroundColor: "#edf5ee",
