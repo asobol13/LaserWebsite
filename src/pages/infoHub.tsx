@@ -3,13 +3,17 @@ import Navigation from '../layouts/navigation';
 import Footer2 from '../layouts/footer2';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+// TODO:
+// 1) Fill out FAQ
+// 2) Fill out Return Policy
+
 const pageStyle: CSSProperties = {
     backgroundColor: '#edf5ee',
     minHeight: '100vh',
     display: 'flex',
     flexDirection: 'column',
     color: 'black',
-    paddingBottom: '270px',
+    paddingBottom: '240px',
 };
 
 const faqsStyle: CSSProperties = {

@@ -2,6 +2,9 @@ import React, { CSSProperties, useEffect, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
+// TODO:
+// 1) Fix the scroll to feature
+
 const footerStyle: CSSProperties = {
   backgroundColor: "#457d4c",
   textAlign: "center",
@@ -106,16 +109,16 @@ const Footer2 = () => {
                   <FooterItem href="mailto:allisonsobol13@gmail.com" text="Email" />
                 </p>
                 <p>
-                  <FooterItem href="/InfoHub" text="Return Policy" />
+                  <FooterItem href="/infoHub" text="Return Policy" />
                 </p>
               </div>
               <div style={verticalLineStyle}></div>
               <div className="column" style={columnStyle}>
                 <p>
-                  <FooterItem href="/InfoHub" text="FAQ's" />
+                  <FooterItem href="/infoHub" text="FAQ's" />
                 </p>
                 <p>
-                  <FooterItem href="/InfoHub" text="Contact Us" />
+                  <FooterItem href="/infoHub" text="Contact Us" />
                 </p>
               </div>
             </div>
