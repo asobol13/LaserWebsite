@@ -4,9 +4,8 @@ import Footer2 from "../layouts/footer2";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 // TODO:
-// 1) Fill out FAQ
-// 2) Contact Us feature
-// 3) Combine all styles
+// 1) Contact Us feature
+// 2) Combine all styles
 
 const pageStyle: CSSProperties = {
   backgroundColor: "#edf5ee",
@@ -19,11 +18,12 @@ const pageStyle: CSSProperties = {
 
 const cardStyle: CSSProperties = {
   backgroundColor: "#f5f5f5",
-  textAlign: "center",
+  textAlign: "left",
+  fontSize: '22px',
   alignItems: "center",
   margin: "auto",
-  width: "800px",
-  height: "600px",
+  width: "1000px",
+  height: "900px",
 };
 
 const cardStyle2: CSSProperties = {
@@ -69,29 +69,41 @@ function InfoHub() {
       <div className="card" style={cardStyle}>
         <div className="container" style={cardBodyStyle}>
           <ol>
-            <li>What materials can be laser engraved?</li>
-            <p>We can engrave on</p>
-            <li>What types of items can I have laser engraved?</li>
-            <p>Some items</p>
-            <li>What is the maximum size that can be laser engraved?</li>
-            <p>The maximum size that can be engraved is </p>
-            <li>How long does the laser engraving process typically take?</li>
-            <p>The laser engraving process typically takes</p>
-            <li>Can you accomodate bulk orders?</li>
-            <p>
-              We are able to do bulk orders but we ask for one week orders over
-              ---
-            </p>
-            <li>Do you offer gift-wrapping or packaging options?</li>
+            <li><strong>What materials can be laser engraved?</strong></li>
+                <p>We can engrave on materials such as glass, 
+                    acrylic, wood, stone, anodized aluminum, powder coated mugs and more!
+                    We can also cut acrylic, wood, and metal materials when they are less than 
+                    1/4".
+                </p>
+            <li><strong>What types of items can I have laser engraved?</strong></li>
+                <p>There are many possibilities for the types of items you can engrave, 
+                    we've done mugs, leather books, nameplates, awards, and so much more!
+                </p>
+            <li><strong>What is the maximum size that can be laser engraved?</strong></li>
+                <p>
+                    The maximum size that can be engraved is about 22" X 32".
+                </p>
+            <li><strong>How long does the laser engraving process typically take?</strong></li>
+                <p>
+                    The laser engraving process typically takes anywhere from a few days to 
+                    2 weeks depending on the quantity of the order and material that is being used.
+                </p>
+            <li><strong>Can you accomodate bulk orders?</strong></li>
+                <p>
+                    We are able to do bulk orders but we ask for you to contact us at least two weeks 
+                    prior on orders over 300 items. This will account for the laser work to be done as 
+                    well as the ordering of the materials.
+                </p>
+            <li><strong>Do you offer gift-wrapping or packaging options?</strong></li>
                 <p>
                     We can provide packaging options for special events or occasions
                     if requested. There will be an added fee for the packaging.
                 </p>
-            <li>Do you provide proofs before engraving the final product?</li>
-            <p>
-              We do provide proofs througout the customization process and will
-              only proceed once you have approved the design.
-            </p>
+            <li><strong>Do you provide proofs before engraving the final product?</strong></li>
+                <p>
+                    We do provide proofs througout the customization process and will
+                    only proceed once you have approved the design.
+                </p>
           </ol>
         </div>
       </div>
@@ -132,7 +144,7 @@ function InfoHub() {
         className="container"
         style={{ marginTop: "40px", marginBottom: "100px" }}
       >
-        <div className="card" style={cardStyle}>
+        <div className="card" style={cardStyle2}>
           <div className="card-body" style={{ backgroundColor: "transparent" }}>
             {/* <form> className="needs-validation" novalidate */}
             <form>
