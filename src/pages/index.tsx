@@ -14,7 +14,7 @@ const pageStyle: CSSProperties = {
   display: "flex",
   flexDirection: "column",
   textAlign: "center",
-  paddingBottom: "240px",
+  paddingBottom: "260px",
 };
 
 const panel1Style = {
@@ -28,12 +28,12 @@ const photoGalleryStyle = {
   marginRight: "5%",
   alignItems: "center",
   justifyContent: "center",
-  borderRadius: '50px',
+  borderRadius: "50px",
 };
 
 const roundedImageStyle = {
-    borderRadius: '20px',
-}
+  borderRadius: "20px",
+};
 
 function Home() {
   return (

@@ -106,16 +106,16 @@ const Footer2 = () => {
                   <FooterItem href="mailto:allisonsobol13@gmail.com" text="Email" />
                 </p>
                 <p>
-                  <FooterItem href="/returnPolicy" text="Return Policy" />
+                  <FooterItem href="/InfoHub" text="Return Policy" />
                 </p>
               </div>
               <div style={verticalLineStyle}></div>
               <div className="column" style={columnStyle}>
                 <p>
-                  <FooterItem href="/FAQ" text="FAQ's" />
+                  <FooterItem href="/InfoHub" text="FAQ's" />
                 </p>
                 <p>
-                  <FooterItem href="/contactUs" text="Contact Us" />
+                  <FooterItem href="/InfoHub" text="Contact Us" />
                 </p>
               </div>
             </div>

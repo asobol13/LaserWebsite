@@ -38,7 +38,7 @@ function InfoHub() {
     return (
         <div className="entire-container" style={pageStyle}>
             {/* This will be faq section */}
-            <div className="container">
+            <div className="container" id="FAQ">
                 <Navigation />
             </div>
             <div className="container">
@@ -54,7 +54,7 @@ function InfoHub() {
                 </ul>
             </div>
             {/* This will be return policy section */}
-            <div className="container">
+            <div className="container" id="ReturnPolicy">
                 <h1 style={{ textAlign: "center", marginTop: "100px" }}>
                     Return Policy
                 </h1>
@@ -87,7 +87,7 @@ function InfoHub() {
                 </div>
             </div>
             {/* This will be contact us section */}
-            <div className="container">
+            <div className="container" id="ContactUs">
                 <h1 style={{ textAlign: "center", marginTop: "100px" }}>Contact Us!</h1>
             </div>
             <div className="container" style={{ textAlign: "center" }}>
