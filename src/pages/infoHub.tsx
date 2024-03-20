@@ -168,6 +168,7 @@ function InfoHub() {
         <div className="card" style={cardStyle2}>
           <div className="card-body" style={{ backgroundColor: "transparent" }}>
             {/* <form> className="needs-validation" novalidate */}
+            {/* <form name="contact" method="POST" data-netlify="true"> */}
             <form>
               <div
                 className="row"
