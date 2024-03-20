@@ -1,10 +1,10 @@
-import React, { CSSProperties } from "react";
+import React, { CSSProperties, useState } from "react";
 import Navigation from "../layouts/navigation";
 import Footer2 from "../layouts/footer2";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 // TODO:
-// 1) Contact Us feature
+// 1) Connect contact for to netlify
 
 const pageStyle: CSSProperties = {
   backgroundColor: "#edf5ee",
@@ -37,7 +37,7 @@ const cardStyle2: CSSProperties = {
   alignItems: "center",
   margin: "auto",
   width: "800px",
-  height: "450px",
+  height: "550px",
 };
 
 const cardBodyStyle: CSSProperties = {
@@ -53,7 +53,36 @@ const textBoxAreaStyle = {
   marginTop: "20px",
 };
 
+const closeButton: CSSProperties = {
+  position: "absolute",
+  bottom: "25px",
+  right: "0",
+  background: "none",
+  border: "none",
+  color: "black",
+  fontSize: "24px",
+};
+
 function InfoHub() {
+  const [submitStatus, setSubmitStatus] = useState("");
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const firstName = event.target.elements.inputFirstName.value;
+    const email = event.target.elements.inputEmail.value;
+    const message = event.target.elements.inputTextArea.value;
+
+    if (firstName && email && email.includes("@") && message) {
+      setSubmitStatus("success");
+    } else {
+      setSubmitStatus("fail");
+    }
+  };
+
+  const handleCloseMessage = () => {
+    setSubmitStatus(""); // Clear the message
+  };
+
   return (
     <div className="entire-container" style={pageStyle}>
       <div className="container">
@@ -167,9 +196,8 @@ function InfoHub() {
       >
         <div className="card" style={cardStyle2}>
           <div className="card-body" style={{ backgroundColor: "transparent" }}>
-            {/* <form> className="needs-validation" novalidate */}
             {/* <form name="contact" method="POST" data-netlify="true"> */}
-            <form>
+            <form onSubmit={handleSubmit}>
               <div
                 className="row"
                 style={{ justifyContent: "center", marginTop: "20px" }}
@@ -181,6 +209,7 @@ function InfoHub() {
                     className="form-control"
                     id="inputFirstName"
                     placeholder="First Name"
+                    required
                   />
                 </div>
                 <div className="form-group col-md-5">
@@ -201,6 +230,7 @@ function InfoHub() {
                     className="form-control"
                     id="inputEmail"
                     placeholder="Email"
+                    required
                   />
                 </div>
                 <div className="form-group col-md-6">
@@ -221,7 +251,26 @@ function InfoHub() {
                   className="form-control"
                   id="inputTextArea"
                   style={{ height: "150px" }}
+                  required
                 ></textarea>
+              </div>
+              <div className="container" style={{ marginTop: "20px", marginBottom: "20px" }}>
+                {submitStatus === "success" && (
+                  <div className="alert alert-success">
+                    Submission successful!{" "}
+                    <button type="button" className="close" onClick={handleCloseMessage} style={closeButton}>
+                      <span>&times;</span>
+                    </button>
+                  </div>
+                )}
+                {submitStatus === "fail" && (
+                  <div className="alert alert-danger">
+                    Please fill in all required fields.{" "}
+                    <button type="button" className="close" onClick={handleCloseMessage} style={closeButton}>
+                      <span>&times;</span>
+                    </button>
+                  </div>
+                )}
               </div>
               <div className="container" style={{ margin: "20px" }}>
                 <button type="submit" className="btn btn-primary">
