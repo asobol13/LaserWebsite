@@ -61,7 +61,7 @@ function InfoHub() {
       </div>
 
       <div className="container">
-        <h1 style={headingStyle}>
+        <h1 style={headingStyle} id="FAQs">
             Frequently Asked Questions
         </h1>
       </div>
@@ -130,7 +130,7 @@ function InfoHub() {
       </div>
 
       <div className="container">
-        <h1 style={headingStyle}>
+        <h1 style={headingStyle} id="ReturnPolicy">
           Return Policy
         </h1>
       </div>
@@ -155,7 +155,9 @@ function InfoHub() {
       </div>
 
       <div className="container">
-        <h1 style={headingStyle}>Contact Us!</h1>
+        <h1 style={headingStyle} id="ContactUs">
+            Contact Us!
+        </h1>
       </div>
       <div className="container" style={{ textAlign: "center" }}>
         <h2>Let us know how we can help you!</h2>
