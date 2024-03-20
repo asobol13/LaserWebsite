@@ -22,8 +22,8 @@ const panel1Style = {
 };
 
 const headingStyle = {
-  margin: '20px',
-  texAlign: 'center',
+  margin: "20px",
+  texAlign: "center",
 };
 
 const photoGalleryStyle = {
@@ -37,11 +37,14 @@ const photoGalleryStyle = {
 };
 
 const rowSpacing = {
-  marginTop: '20px',
+  marginTop: "20px",
 };
 
-const roundedImageStyle = {
+const roundedImageStyle: CSSProperties = {
   borderRadius: "20px",
+  width: "600px",
+  height: "600px",
+  objectFit: "cover",
 };
 
 function Home() {
@@ -69,9 +72,9 @@ function Home() {
           </div>
           <div className="col-4">
             <img
-              src="/images/yetiMugRambler.jpg"
+              src="/images/huckleberryGlass.jpg"
               className="img-fluid"
-              alt="Yeti Rambler Mug"
+              alt="Pint Glass"
               style={roundedImageStyle}
             />
           </div>
@@ -85,11 +88,11 @@ function Home() {
           </div>
         </div>
         <div className="row" style={rowSpacing}>
-          <div className="col-3">
+          <div className="col-4">
             <img
-              src="/images/lightSign.jpg"
+              src="/images/yetiMugRambler.jpg"
               className="img-fluid"
-              alt="Aviation Light Up Sign"
+              alt="Yeti Rambler Mug"
               style={roundedImageStyle}
             />
           </div>
@@ -139,9 +142,9 @@ function Home() {
         <div className="row" style={rowSpacing}>
           <div className="col-4">
             <img
-              src="/images/huckleberryGlass.jpg"
+              src="/images/lightSign.jpg"
               className="img-fluid"
-              alt="Pint Glass"
+              alt="Aviation Light Up Sign"
               style={roundedImageStyle}
             />
           </div>
