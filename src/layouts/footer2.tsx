@@ -4,7 +4,6 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 
 // TODO:
 // 1) Fix the scroll to feature
-// 2) Combine all styles
 
 const footerStyle: CSSProperties = {
   backgroundColor: "#457d4c",
@@ -18,6 +17,12 @@ const footerStyle: CSSProperties = {
   zIndex: 1000,
   transform: "translateY(100%)", // Initially off-screen
   transition: "transform 0.25s ease-out", // Add transition for smooth movement
+};
+
+const footerColumnStyle: CSSProperties = {
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
 };
 
 const customerServiceLinks: CSSProperties = {
@@ -34,9 +39,9 @@ const columnStyle: CSSProperties = {
 };
 
 const verticalLineStyle: CSSProperties = {
-  borderLeft: "1px solid black", // Adjust color as needed
+  borderLeft: "1px solid black",
   height: "100%",
-  marginRight: "5px", // Adjust as needed
+  marginRight: "5px",
 };
 
 const Footer2 = () => {
@@ -74,7 +79,7 @@ const Footer2 = () => {
       marginTop: "10px",
       padding: "5px",
       textDecoration: isHovered ? "underline" : "none",
-      color: "black", // Ensure color is set to black
+      color: "black",
     };
 
     return (
@@ -126,11 +131,7 @@ const Footer2 = () => {
           </div>
           <div className="column col-md-6 col-sm-12">
             <div
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-              }}
+              style={footerColumnStyle}
             >
               <h3>Follow Us</h3>
               <p>

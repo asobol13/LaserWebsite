@@ -5,7 +5,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 // TODO:
 // 1) Contact Us feature
-// 2) Combine all styles
 
 const pageStyle: CSSProperties = {
   backgroundColor: "#edf5ee",
@@ -13,13 +12,19 @@ const pageStyle: CSSProperties = {
   display: "flex",
   flexDirection: "column",
   color: "black",
-  paddingBottom: "250px",
+  paddingBottom: "340px",
+};
+
+const headingStyle: CSSProperties = {
+    textAlign: "center",
+    marginTop: "100px",
+    marginBottom: "40px",
 };
 
 const cardStyle: CSSProperties = {
   backgroundColor: "#f5f5f5",
   textAlign: "left",
-  fontSize: '22px',
+  fontSize: "22px",
   alignItems: "center",
   margin: "auto",
   width: "1000px",
@@ -27,13 +32,13 @@ const cardStyle: CSSProperties = {
 };
 
 const cardStyle2: CSSProperties = {
-    backgroundColor: "#f5f5f5",
-    textAlign: "center",
-    alignItems: "center",
-    margin: "auto",
-    width: "800px",
-    height: "450px",
-  };
+  backgroundColor: "#f5f5f5",
+  textAlign: "center",
+  alignItems: "center",
+  margin: "auto",
+  width: "800px",
+  height: "450px",
+};
 
 const cardBodyStyle: CSSProperties = {
   display: "flex",
@@ -51,71 +56,86 @@ const textBoxAreaStyle = {
 function InfoHub() {
   return (
     <div className="entire-container" style={pageStyle}>
-      {/* This will be faq section */}
-      <div className="container" id="FAQ">
+      <div className="container">
         <Navigation />
       </div>
+
       <div className="container">
-        <h1
-          style={{
-            textAlign: "center",
-            marginTop: "40px",
-            marginBottom: "100px",
-          }}
-        >
-          Frequently Asked Questions
+        <h1 style={headingStyle}>
+            Frequently Asked Questions
         </h1>
       </div>
       <div className="card" style={cardStyle}>
         <div className="container" style={cardBodyStyle}>
           <ol>
-            <li><strong>What materials can be laser engraved?</strong></li>
-                <p>We can engrave on materials such as glass, 
-                    acrylic, wood, stone, anodized aluminum, powder coated mugs and more!
-                    We can also cut acrylic, wood, and metal materials when they are less than 
-                    1/4".
-                </p>
-            <li><strong>What types of items can I have laser engraved?</strong></li>
-                <p>There are many possibilities for the types of items you can engrave, 
-                    we've done mugs, leather books, nameplates, awards, and so much more!
-                </p>
-            <li><strong>What is the maximum size that can be laser engraved?</strong></li>
-                <p>
-                    The maximum size that can be engraved is about 22" X 32".
-                </p>
-            <li><strong>How long does the laser engraving process typically take?</strong></li>
-                <p>
-                    The laser engraving process typically takes anywhere from a few days to 
-                    2 weeks depending on the quantity of the order and material that is being used.
-                </p>
-            <li><strong>Can you accomodate bulk orders?</strong></li>
-                <p>
-                    We are able to do bulk orders but we ask for you to contact us at least two weeks 
-                    prior on orders over 300 items. This will account for the laser work to be done as 
-                    well as the ordering of the materials.
-                </p>
-            <li><strong>Do you offer gift-wrapping or packaging options?</strong></li>
-                <p>
-                    We can provide packaging options for special events or occasions
-                    if requested. There will be an added fee for the packaging.
-                </p>
-            <li><strong>Do you provide proofs before engraving the final product?</strong></li>
-                <p>
-                    We do provide proofs througout the customization process and will
-                    only proceed once you have approved the design.
-                </p>
+            <li>
+              <strong>What materials can be laser engraved?</strong>
+            </li>
+            <p>
+              We can engrave on materials such as glass, acrylic, wood, stone,
+              anodized aluminum, powder coated mugs and more! We can also cut
+              acrylic, wood, and metal materials when they are less than 1/4".
+            </p>
+            <li>
+              <strong>What types of items can I have laser engraved?</strong>
+            </li>
+            <p>
+              There are many possibilities for the types of items you can
+              engrave, we've done mugs, leather books, nameplates, awards, and
+              so much more!
+            </p>
+            <li>
+              <strong>
+                What is the maximum size that can be laser engraved?
+              </strong>
+            </li>
+            <p>The maximum size that can be engraved is about 22" X 32".</p>
+            <li>
+              <strong>
+                How long does the laser engraving process typically take?
+              </strong>
+            </li>
+            <p>
+              The laser engraving process typically takes anywhere from a few
+              days to 2 weeks depending on the quantity of the order and
+              material that is being used.
+            </p>
+            <li>
+              <strong>Can you accomodate bulk orders?</strong>
+            </li>
+            <p>
+              We are able to do bulk orders but we ask for you to contact us at
+              least two weeks prior on orders over 300 items. This will account
+              for the laser work to be done as well as the ordering of the
+              materials.
+            </p>
+            <li>
+              <strong>Do you offer gift-wrapping or packaging options?</strong>
+            </li>
+            <p>
+              We can provide packaging options for special events or occasions
+              if requested. There will be an added fee for the packaging.
+            </p>
+            <li>
+              <strong>
+                Do you provide proofs before engraving the final product?
+              </strong>
+            </li>
+            <p>
+              We do provide proofs througout the customization process and will
+              only proceed once you have approved the design.
+            </p>
           </ol>
         </div>
       </div>
-      {/* This will be return policy section */}
-      <div className="container" id="ReturnPolicy">
-        <h1 style={{ textAlign: "center", marginTop: "100px" }}>
+
+      <div className="container">
+        <h1 style={headingStyle}>
           Return Policy
         </h1>
       </div>
       <div
         className="container"
-        style={{ marginTop: "40px", marginBottom: "100px" }}
       >
         <div className="card" style={cardStyle2}>
           <div className="card-body" style={cardBodyStyle}>
@@ -133,16 +153,15 @@ function InfoHub() {
           </div>
         </div>
       </div>
-      {/* This will be contact us section */}
-      <div className="container" id="ContactUs">
-        <h1 style={{ textAlign: "center", marginTop: "100px" }}>Contact Us!</h1>
+
+      <div className="container">
+        <h1 style={headingStyle}>Contact Us!</h1>
       </div>
       <div className="container" style={{ textAlign: "center" }}>
         <h2>Let us know how we can help you!</h2>
       </div>
       <div
         className="container"
-        style={{ marginTop: "40px", marginBottom: "100px" }}
       >
         <div className="card" style={cardStyle2}>
           <div className="card-body" style={{ backgroundColor: "transparent" }}>

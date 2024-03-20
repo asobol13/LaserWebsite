@@ -7,7 +7,6 @@ import Footer2 from "../layouts/footer2";
 // TODO:
 // 1) Rearrange and change images for consistency
 // 2) Create a better laser video
-// 3) Combine all styles
 
 const pageStyle: CSSProperties = {
   backgroundColor: "#edf5ee",
@@ -22,6 +21,11 @@ const panel1Style = {
   marginBottom: "50px",
 };
 
+const headingStyle = {
+  margin: '20px',
+  texAlign: 'center',
+};
+
 const photoGalleryStyle = {
   marginTop: "10px",
   marginBottom: "100px",
@@ -30,6 +34,10 @@ const photoGalleryStyle = {
   alignItems: "center",
   justifyContent: "center",
   borderRadius: "50px",
+};
+
+const rowSpacing = {
+  marginTop: '20px',
 };
 
 const roundedImageStyle = {
@@ -44,17 +52,13 @@ function Home() {
       </div>
       <div className="about-panel panel-1" style={panel1Style}>
         <VideoBanner />
-        {/* <video width="400" controls>
-                    <source src="public\images\laservideoexample.mp4" type="video/mp4"/>
-                    Your browser does not support HTML5 video.
-                </video> */}
       </div>
 
       <div className="container">
-        <h1 style={{ margin: "20px", textAlign: "center" }}>Gallery</h1>
+        <h1 style={headingStyle}>Gallery</h1>
       </div>
       <div className="gridContainer" style={photoGalleryStyle}>
-        <div className="row" style={{ marginTop: "20px" }}>
+        <div className="row" style={rowSpacing}>
           <div className="col-4">
             <img
               src="/images/japanTourMugs.jpg"
@@ -80,7 +84,7 @@ function Home() {
             />
           </div>
         </div>
-        <div className="row" style={{ marginTop: "20px" }}>
+        <div className="row" style={rowSpacing}>
           <div className="col-3">
             <img
               src="/images/lightSign.jpg"
@@ -106,7 +110,7 @@ function Home() {
             />
           </div>
         </div>
-        <div className="row" style={{ marginTop: "20px" }}>
+        <div className="row" style={rowSpacing}>
           <div className="col-4">
             <img
               src="/images/leatherWallet1.jpg"
@@ -132,7 +136,7 @@ function Home() {
             />
           </div>
         </div>
-        <div className="row" style={{ marginTop: "20px" }}>
+        <div className="row" style={rowSpacing}>
           <div className="col-4">
             <img
               src="/images/huckleberryGlass.jpg"
