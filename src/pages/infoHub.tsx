@@ -3,9 +3,6 @@ import Navigation from "../layouts/navigation";
 import Footer2 from "../layouts/footer2";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-// TODO:
-// 1) Connect contact for to netlify
-
 const pageStyle: CSSProperties = {
   backgroundColor: "#edf5ee",
   minHeight: "100vh",
@@ -196,8 +193,7 @@ function InfoHub() {
       >
         <div className="card" style={cardStyle2}>
           <div className="card-body" style={{ backgroundColor: "transparent" }}>
-            {/* <form name="contact" method="POST" data-netlify="true"> */}
-            <form onSubmit={handleSubmit}>
+            <form name="contact" method="POST" data-netlify="true" action="/success" onSubmit={handleSubmit}>
               <div
                 className="row"
                 style={{ justifyContent: "center", marginTop: "20px" }}
