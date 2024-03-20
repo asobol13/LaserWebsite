@@ -4,6 +4,7 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 
 // TODO:
 // 1) Fix the scroll to feature
+// 2) Combine all styles
 
 const footerStyle: CSSProperties = {
   backgroundColor: "#457d4c",
