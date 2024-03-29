@@ -40,11 +40,28 @@ const rowSpacing = {
   marginTop: "20px",
 };
 
+const specialRowSpacing = {
+  marginTop: "20px",
+  alignItems: "center",
+  justifyContent: "center",
+};
+
 const roundedImageStyle: CSSProperties = {
   borderRadius: "20px",
   width: "800px",
   height: "400px",
   objectFit: "cover",
+  justifyContent: "center",
+  alignItems: "center",
+};
+
+const specialImageStyle: CSSProperties = {
+  borderRadius: "20px",
+  width: "100%",
+  height: "100%",
+  objectFit: "cover",
+  justifyContent: "center",
+  alignItems: "center",
 };
 
 function Home() {
@@ -89,14 +106,33 @@ function Home() {
           </div>
           <div className="col-3">
             <img
-              src="/images/woodPhotoEngraving.jpg"
+              src="/images/aceHardwareMug.jpg"
               className="img-fluid"
-              alt="Custom Maltese Wood Photo Engraving"
+              alt="Custom Ace Hardware Rambler Mug"
               style={roundedImageStyle}
             />
           </div>
         </div>
         {/* Row 2 */}
+        <div className="row" style={specialRowSpacing}>
+          <div className="col-5">
+            <img
+              src="/images/woodPhotoEngraving.jpg"
+              className="img-fluid"
+              alt="Custom Maltese Wood Photo Engraving"
+              style={specialImageStyle}
+            />
+          </div>
+          <div className="col-5">
+            <img
+              src="/images/charcuterieboardEngraving.jpeg"
+              className="img-fluid"
+              alt="Custom Charcuterie Board Engraving"
+              style={roundedImageStyle}
+            />
+          </div>
+        </div>
+        {/* Row 3 */}
         <div className="row" style={rowSpacing}>
           <div className="col-3">
             <img
@@ -131,7 +167,26 @@ function Home() {
             />
           </div>
         </div>
-        {/* Row 3 */}
+        {/* Row 4 */}
+        <div className="row" style={specialRowSpacing}>
+          <div className="col-5">
+            <img
+              src="/images/dancoKnives.jpeg"
+              className="img-fluid"
+              alt="Custom Laser Engraved Knives"
+              style={specialImageStyle}
+            />
+          </div>
+          <div className="col-5">
+            <img
+              src="/images/watchYourHeadSign.jpg"
+              className="img-fluid"
+              alt="Custom Watch Your Head Sign"
+              style={specialImageStyle}
+            />
+          </div>
+        </div>
+        {/* Row 5 */}
         <div className="row" style={rowSpacing}>
           <div className="col-3">
             <img
@@ -159,98 +214,39 @@ function Home() {
           </div>
           <div className="col-3">
             <img
-              src="/images/charcuterieboardEngraving.jpeg"
+              src="/images/japaneseBoxLantern.jpg"
               className="img-fluid"
-              alt="Custom Charcuterie Board Engraving"
-              style={roundedImageStyle}
-            />
-          </div>
-        </div>
-        {/* Row 4 */}
-        <div className="row" style={rowSpacing}>
-          <div className="col-3">
-            <img
-              src="/images/laserCutDieBox1.jpg"
-              className="img-fluid"
-              alt="Custom Laser Cut Die Box Part 1"
-              style={roundedImageStyle}
-            />
-          </div>
-          <div className="col-3">
-            <img
-              src="/images/laserCutDieBox2.jpg"
-              className="img-fluid"
-              alt="Custom Laser Cut Die Box Part 2"
-              style={roundedImageStyle}
-            />
-          </div>
-          <div className="col-3">
-            <img
-              src="/images/aceHardwareMug.jpg"
-              className="img-fluid"
-              alt="Custom Ace Hardware Rambler Mug"
-              style={roundedImageStyle}
-            />
-          </div>
-          <div className="col-3">
-            <img
-              src="/images/aluminumStickers.jpg"
-              className="img-fluid"
-              alt="Custom Placard Stickers"
-              style={roundedImageStyle}
-            />
-          </div>
-        </div>
-        {/* Row 5 */}
-        <div className="row" style={rowSpacing}>
-          <div className="col-3">
-            <img
-              src="/images/dancoKnives.jpeg"
-              className="img-fluid"
-              alt="Custom Laser Engraved Knives"
-              style={roundedImageStyle}
-            />
-          </div>
-          <div className="col-3">
-            <img
-              src="/images/buddyMemorialBox.jpg"
-              className="img-fluid"
-              alt="Custom Pet Memorial Box"
-              style={roundedImageStyle}
-            />
-          </div>
-          <div className="col-3">
-            <img
-              src="/images/watchYourHeadSign.jpg"
-              className="img-fluid"
-              alt="Custom Watch Your Head Sign"
-              style={roundedImageStyle}
-            />
-          </div>
-          <div className="col-3">
-            <img
-              src="/images/his&hersMasonJars.jpg"
-              className="img-fluid"
-              alt="Custom His And Hers Mason Jars"
+              alt="Custom Japanese Box Lantern"
               style={roundedImageStyle}
             />
           </div>
         </div>
         {/* Row 6 */}
+        <div className="row" style={specialRowSpacing}>
+          <div className="col-5">
+            <img
+              src="/images/laserCutDieBox1.jpg"
+              className="img-fluid"
+              alt="Custom Laser Cut Die Box Part 1"
+              style={specialImageStyle}
+            />
+          </div>
+          <div className="col-5">
+            <img
+              src="/images/laserCutDieBox2.jpg"
+              className="img-fluid"
+              alt="Custom Laser Cut Die Box Part 2"
+              style={specialImageStyle}
+            />
+          </div>
+        </div>
+        {/* Row 7 */}
         <div className="row" style={rowSpacing}>
           <div className="col-3">
             <img
-              src="/images/dancoYetiRambler.jpeg"
+              src="/images/fedexMug.jpeg"
               className="img-fluid"
-              alt="Custom Yeti Rambler Mug"
-              style={roundedImageStyle}
-            />
-          </div>
-          <div className="col-3">
-            <img
-              src="/images/japaneseBoxLantern.jpg"
-              className="img-fluid"
-              alt="Custom Japanese Box Lantern"
+              alt="Custom Engraved To Go Mug"
               style={roundedImageStyle}
             />
           </div>
@@ -264,28 +260,47 @@ function Home() {
           </div>
           <div className="col-3">
             <img
-              src="/images/mustangLightSign.jpg"
+              src="/images/his&hersMasonJars.jpg"
               className="img-fluid"
-              alt="Custom Reno Air Races Mustang Light Sign"
+              alt="Custom His And Hers Mason Jars"
+              style={roundedImageStyle}
+            />
+          </div>
+          <div className="col-3">
+            <img
+              src="/images/buddyMemorialBox.jpg"
+              className="img-fluid"
+              alt="Custom Pet Memorial Box"
               style={roundedImageStyle}
             />
           </div>
         </div>
-        {/* Row 7 */}
+        {/* Row 8 */}
+        <div className="row" style={specialRowSpacing}>
+          <div className="col-5">
+            <img
+              src="/images/aluminumStickers.jpg"
+              className="img-fluid"
+              alt="Custom Placard Stickers"
+              style={specialImageStyle}
+            />
+          </div>
+          <div className="col-5">
+            <img
+              src="/images/standoffSign.jpg"
+              className="img-fluid"
+              alt="Custom Standoff Sign"
+              style={specialImageStyle}
+            />
+          </div>
+        </div>
+        {/* Row 9 */}
         <div className="row" style={rowSpacing}>
           <div className="col-3">
             <img
-              src="/images/2ndAmendmentWoodEngraving.jpg"
+              src="/images/dancoYetiRambler.jpeg"
               className="img-fluid"
-              alt="Custom 2nd Amendment Wood Engraving"
-              style={roundedImageStyle}
-            />
-          </div>
-          <div className="col-3">
-            <img
-              src="/images/32ozWaterBottle.jpg"
-              className="img-fluid"
-              alt="Custom 32oz Laser Engraved Water Bottle"
+              alt="Custom Yeti Rambler Mug"
               style={roundedImageStyle}
             />
           </div>
@@ -299,20 +314,55 @@ function Home() {
           </div>
           <div className="col-3">
             <img
-              src="/images/customBeerMug.jpg"
+              src="/images/2ndAmendmentWoodEngraving.jpg"
               className="img-fluid"
-              alt="Custom Laser Engraved Mug"
+              alt="Custom 2nd Amendment Wood Engraving"
+              style={roundedImageStyle}
+            />
+          </div>
+          <div className="col-3">
+            <img
+              src="/images/mustangLightSign.jpg"
+              className="img-fluid"
+              alt="Custom Reno Air Races Mustang Light Sign"
               style={roundedImageStyle}
             />
           </div>
         </div>
-        {/* Row 8 */}
+        {/* Row 10 */}
+        <div className="row" style={specialRowSpacing}>
+          <div className="col-5">
+            <img
+              src="/images/remadePlacard.PNG"
+              className="img-fluid"
+              alt="Custom Engraved Redone Placard"
+              style={specialImageStyle}
+            />
+          </div>
+          <div className="col-5">
+            <img
+              src="/images/japanTourMugs.jpg"
+              className="img-fluid"
+              alt="Custom Engraved Japan Tour Mugs"
+              style={specialImageStyle}
+            />
+          </div>
+        </div>
+        {/* Row 11 */}
         <div className="row" style={rowSpacing}>
           <div className="col-3">
             <img
-              src="/images/fedexMug.jpeg"
+              src="/images/leatherBook.jpg"
               className="img-fluid"
-              alt="Custom Engraved To Go Mug"
+              alt="Custom Engraved Leather Book"
+              style={roundedImageStyle}
+            />
+          </div>
+          <div className="col-3">
+            <img
+              src="/images/32ozWaterBottle.jpg"
+              className="img-fluid"
+              alt="Custom 32oz Laser Engraved Water Bottle"
               style={roundedImageStyle}
             />
           </div>
@@ -326,57 +376,14 @@ function Home() {
           </div>
           <div className="col-3">
             <img
-              src="/images/yetiMugRambler.jpg"
+              src="/images/customBeerMug.jpg"
               className="img-fluid"
-              alt="Custom Engraved Yeti Rambler Mug"
-              style={roundedImageStyle}
-            />
-          </div>
-          <div className="col-3">
-            <img
-              src="/images/standoffSign.jpg"
-              className="img-fluid"
-              alt="Custom Standoff Sign"
+              alt="Custom Laser Engraved Mug"
               style={roundedImageStyle}
             />
           </div>
         </div>
-        {/* Row 9 */}
-        <div className="row" style={rowSpacing}>
-          <div className="col-3">
-            <img
-              src="/images/shastaMasonJarGlass.jpg"
-              className="img-fluid"
-              alt="Custom Engraved Mason Jar Glass"
-              style={roundedImageStyle}
-            />
-          </div>
-          <div className="col-3">
-            <img
-              src="/images/renoAirRacesChallengeCoin.jpg"
-              className="img-fluid"
-              alt="Custom Engraved Wooden Challenge Coin"
-              style={roundedImageStyle}
-            />
-          </div>
-          <div className="col-3">
-            <img
-              src="/images/remadePlacard.PNG"
-              className="img-fluid"
-              alt="Custom Engraved Redone Placard"
-              style={roundedImageStyle}
-            />
-          </div>
-          <div className="col-3">
-            <img
-              src="/images/customLaserGrampaMug.jpeg"
-              className="img-fluid"
-              alt="Custom Engraved Grampa Mug"
-              style={roundedImageStyle}
-            />
-          </div>
-        </div>
-        {/* Row 10 */}
+        {/* Row 12 */}
         <div className="row" style={rowSpacing}>
           <div className="col-3">
             <img
@@ -388,25 +395,44 @@ function Home() {
           </div>
           <div className="col-3">
             <img
+              src="/images/customLaserGrampaMug.jpeg"
+              className="img-fluid"
+              alt="Custom Engraved Grampa Mug"
+              style={roundedImageStyle}
+            />
+          </div>
+          <div className="col-3">
+            <img
+              src="/images/yetiMugRambler.jpg"
+              className="img-fluid"
+              alt="Custom Engraved Yeti Rambler Mug"
+              style={roundedImageStyle}
+            />
+          </div>
+          <div className="col-3">
+            <img
+              src="/images/renoAirRacesChallengeCoin.jpg"
+              className="img-fluid"
+              alt="Custom Engraved Wooden Challenge Coin"
+              style={roundedImageStyle}
+            />
+          </div>
+        </div>
+        {/* Row 13 */}
+        <div className="row" style={rowSpacing}>
+          <div className="col-3">
+            <img
+              src="/images/shastaMasonJarGlass.jpg"
+              className="img-fluid"
+              alt="Custom Engraved Mason Jar Glass"
+              style={roundedImageStyle}
+            />
+          </div>
+          <div className="col-3">
+            <img
               src="/images/huckleberryGlass.jpg"
               className="img-fluid"
               alt="Custom Tombstone HuckleBerry Glass"
-              style={roundedImageStyle}
-            />
-          </div>
-          <div className="col-3">
-            <img
-              src="/images/japanTourMugs.jpg"
-              className="img-fluid"
-              alt="Custom Engraved Japan Tour Mugs"
-              style={roundedImageStyle}
-            />
-          </div>
-          <div className="col-3">
-            <img
-              src="/images/leatherBook.jpg"
-              className="img-fluid"
-              alt="Custom Engraved Leather Book"
               style={roundedImageStyle}
             />
           </div>
