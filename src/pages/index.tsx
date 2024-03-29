@@ -79,8 +79,8 @@ function Home() {
       </div>
       <div className="gridContainer" style={photoGalleryStyle}>
         {/* Row 1 */}
-        <div className="row" style={rowSpacing}>
-          <div className="col-3">
+        <div className="row row-cols-1 row-cols-md-2" style={rowSpacing}>
+          <div className="col mb-4">
             <img
               src="/images/leatherMugEngravings.jpeg"
               className="img-fluid"
@@ -88,7 +88,7 @@ function Home() {
               style={roundedImageStyle}
             />
           </div>
-          <div className="col-3">
+          <div className="col mb-4">
             <img
               src="/images/champagneFluteEngraving.jpeg"
               className="img-fluid"
@@ -96,7 +96,7 @@ function Home() {
               style={roundedImageStyle}
             />
           </div>
-          <div className="col-3">
+          <div className="col mb-4">
             <img
               src="/images/stBernardsClassroomSigns.jpeg"
               className="img-fluid"
@@ -104,7 +104,7 @@ function Home() {
               style={roundedImageStyle}
             />
           </div>
-          <div className="col-3">
+          <div className="col mb-4">
             <img
               src="/images/aceHardwareMug.jpg"
               className="img-fluid"
@@ -114,8 +114,8 @@ function Home() {
           </div>
         </div>
         {/* Row 2 */}
-        <div className="row" style={specialRowSpacing}>
-          <div className="col-5">
+        <div className="row row-cols-1 row-cols-md-2" style={specialRowSpacing}>
+          <div className="col mb-4">
             <img
               src="/images/woodPhotoEngraving.jpg"
               className="img-fluid"
@@ -123,18 +123,18 @@ function Home() {
               style={specialImageStyle}
             />
           </div>
-          <div className="col-5">
+          <div className="col mb-4">
             <img
               src="/images/charcuterieboardEngraving.jpeg"
               className="img-fluid"
               alt="Custom Charcuterie Board Engraving"
-              style={roundedImageStyle}
+              style={specialImageStyle}
             />
           </div>
         </div>
         {/* Row 3 */}
-        <div className="row" style={rowSpacing}>
-          <div className="col-3">
+        <div className="row row-cols-1 row-cols-md-2" style={rowSpacing}>
+          <div className="col mb-4">
             <img
               src="/images/bardahlYetiMugsSide1.jpeg"
               className="img-fluid"
@@ -142,7 +142,7 @@ function Home() {
               style={roundedImageStyle}
             />
           </div>
-          <div className="col-3">
+          <div className="col mb-4">
             <img
               src="/images/bardahlYetiMugsSide2.jpeg"
               className="img-fluid"
@@ -150,7 +150,7 @@ function Home() {
               style={roundedImageStyle}
             />
           </div>
-          <div className="col-3">
+          <div className="col mb-4">
             <img
               src="/images/stBernardsLightSign.jpg"
               className="img-fluid"
@@ -158,7 +158,7 @@ function Home() {
               style={roundedImageStyle}
             />
           </div>
-          <div className="col-3">
+          <div className="col mb-4">
             <img
               src="/images/redRoverMug.jpg"
               className="img-fluid"
@@ -168,8 +168,8 @@ function Home() {
           </div>
         </div>
         {/* Row 4 */}
-        <div className="row" style={specialRowSpacing}>
-          <div className="col-5">
+        <div className="row row-cols-1 row-cols-md-2" style={specialRowSpacing}>
+          <div className="col mb-4">
             <img
               src="/images/dancoKnives.jpeg"
               className="img-fluid"
@@ -177,7 +177,7 @@ function Home() {
               style={specialImageStyle}
             />
           </div>
-          <div className="col-5">
+          <div className="col mb-4">
             <img
               src="/images/watchYourHeadSign.jpg"
               className="img-fluid"
@@ -187,8 +187,8 @@ function Home() {
           </div>
         </div>
         {/* Row 5 */}
-        <div className="row" style={rowSpacing}>
-          <div className="col-3">
+        <div className="row row-cols-1 row-cols-md-2" style={rowSpacing}>
+          <div className="col mb-4">
             <img
               src="/images/leatherWallet1.jpg"
               className="img-fluid"
@@ -196,7 +196,7 @@ function Home() {
               style={roundedImageStyle}
             />
           </div>
-          <div className="col-3">
+          <div className="col mb-4">
             <img
               src="/images/leatherWallet2.jpg"
               className="img-fluid"
@@ -204,7 +204,7 @@ function Home() {
               style={roundedImageStyle}
             />
           </div>
-          <div className="col-3">
+          <div className="col mb-4">
             <img
               src="/images/bestFriendsPawsMug.jpg"
               className="img-fluid"
@@ -212,7 +212,7 @@ function Home() {
               style={roundedImageStyle}
             />
           </div>
-          <div className="col-3">
+          <div className="col mb-4">
             <img
               src="/images/japaneseBoxLantern.jpg"
               className="img-fluid"
@@ -222,8 +222,8 @@ function Home() {
           </div>
         </div>
         {/* Row 6 */}
-        <div className="row" style={specialRowSpacing}>
-          <div className="col-5">
+        <div className="row row-cols-1 row-cols-md-2" style={specialRowSpacing}>
+          <div className="col mb-4">
             <img
               src="/images/laserCutDieBox1.jpg"
               className="img-fluid"
@@ -231,7 +231,7 @@ function Home() {
               style={specialImageStyle}
             />
           </div>
-          <div className="col-5">
+          <div className="col mb-4">
             <img
               src="/images/laserCutDieBox2.jpg"
               className="img-fluid"
@@ -241,8 +241,8 @@ function Home() {
           </div>
         </div>
         {/* Row 7 */}
-        <div className="row" style={rowSpacing}>
-          <div className="col-3">
+        <div className="row row-cols-1 row-cols-md-2" style={rowSpacing}>
+          <div className="col mb-4">
             <img
               src="/images/fedexMug.jpeg"
               className="img-fluid"
@@ -250,7 +250,7 @@ function Home() {
               style={roundedImageStyle}
             />
           </div>
-          <div className="col-3">
+          <div className="col mb-4">
             <img
               src="/images/seikoWatchEngraving.jpeg"
               className="img-fluid"
@@ -258,7 +258,7 @@ function Home() {
               style={roundedImageStyle}
             />
           </div>
-          <div className="col-3">
+          <div className="col mb-4">
             <img
               src="/images/his&hersMasonJars.jpg"
               className="img-fluid"
@@ -266,7 +266,7 @@ function Home() {
               style={roundedImageStyle}
             />
           </div>
-          <div className="col-3">
+          <div className="col mb-4">
             <img
               src="/images/buddyMemorialBox.jpg"
               className="img-fluid"
@@ -276,8 +276,8 @@ function Home() {
           </div>
         </div>
         {/* Row 8 */}
-        <div className="row" style={specialRowSpacing}>
-          <div className="col-5">
+        <div className="row row-cols-1 row-cols-md-2" style={specialRowSpacing}>
+          <div className="col mb-4">
             <img
               src="/images/aluminumStickers.jpg"
               className="img-fluid"
@@ -285,7 +285,7 @@ function Home() {
               style={specialImageStyle}
             />
           </div>
-          <div className="col-5">
+          <div className="col mb-4">
             <img
               src="/images/standoffSign.jpg"
               className="img-fluid"
@@ -295,8 +295,8 @@ function Home() {
           </div>
         </div>
         {/* Row 9 */}
-        <div className="row" style={rowSpacing}>
-          <div className="col-3">
+        <div className="row row-cols-1 row-cols-md-2" style={rowSpacing}>
+          <div className="col mb-4">
             <img
               src="/images/dancoYetiRambler.jpeg"
               className="img-fluid"
@@ -304,7 +304,7 @@ function Home() {
               style={roundedImageStyle}
             />
           </div>
-          <div className="col-3">
+          <div className="col mb-4">
             <img
               src="/images/boxEngraving.jpg"
               className="img-fluid"
@@ -312,7 +312,7 @@ function Home() {
               style={roundedImageStyle}
             />
           </div>
-          <div className="col-3">
+          <div className="col mb-4">
             <img
               src="/images/2ndAmendmentWoodEngraving.jpg"
               className="img-fluid"
@@ -320,7 +320,7 @@ function Home() {
               style={roundedImageStyle}
             />
           </div>
-          <div className="col-3">
+          <div className="col mb-4">
             <img
               src="/images/mustangLightSign.jpg"
               className="img-fluid"
@@ -330,8 +330,8 @@ function Home() {
           </div>
         </div>
         {/* Row 10 */}
-        <div className="row" style={specialRowSpacing}>
-          <div className="col-5">
+        <div className="row row-cols-1 row-cols-md-2" style={specialRowSpacing}>
+          <div className="col mb-4">
             <img
               src="/images/remadePlacard.PNG"
               className="img-fluid"
@@ -339,7 +339,7 @@ function Home() {
               style={specialImageStyle}
             />
           </div>
-          <div className="col-5">
+          <div className="col mb-4">
             <img
               src="/images/japanTourMugs.jpg"
               className="img-fluid"
@@ -349,8 +349,8 @@ function Home() {
           </div>
         </div>
         {/* Row 11 */}
-        <div className="row" style={rowSpacing}>
-          <div className="col-3">
+        <div className="row row-cols-1 row-cols-md-2" style={rowSpacing}>
+          <div className="col mb-4">
             <img
               src="/images/leatherBook.jpg"
               className="img-fluid"
@@ -358,7 +358,7 @@ function Home() {
               style={roundedImageStyle}
             />
           </div>
-          <div className="col-3">
+          <div className="col mb-4">
             <img
               src="/images/32ozWaterBottle.jpg"
               className="img-fluid"
@@ -366,7 +366,7 @@ function Home() {
               style={roundedImageStyle}
             />
           </div>
-          <div className="col-3">
+          <div className="col mb-4">
             <img
               src="/images/woodRodeoCoin.jpg"
               className="img-fluid"
@@ -374,7 +374,7 @@ function Home() {
               style={roundedImageStyle}
             />
           </div>
-          <div className="col-3">
+          <div className="col mb-4">
             <img
               src="/images/customBeerMug.jpg"
               className="img-fluid"
@@ -384,8 +384,8 @@ function Home() {
           </div>
         </div>
         {/* Row 12 */}
-        <div className="row" style={rowSpacing}>
-          <div className="col-3">
+        <div className="row row-cols-1 row-cols-md-2" style={rowSpacing}>
+          <div className="col mb-4">
             <img
               src="/images/customMachiningMug.jpg"
               className="img-fluid"
@@ -393,7 +393,7 @@ function Home() {
               style={roundedImageStyle}
             />
           </div>
-          <div className="col-3">
+          <div className="col mb-4">
             <img
               src="/images/customLaserGrampaMug.jpeg"
               className="img-fluid"
@@ -401,7 +401,7 @@ function Home() {
               style={roundedImageStyle}
             />
           </div>
-          <div className="col-3">
+          <div className="col mb-4">
             <img
               src="/images/yetiMugRambler.jpg"
               className="img-fluid"
@@ -409,7 +409,7 @@ function Home() {
               style={roundedImageStyle}
             />
           </div>
-          <div className="col-3">
+          <div className="col mb-4">
             <img
               src="/images/renoAirRacesChallengeCoin.jpg"
               className="img-fluid"
@@ -419,8 +419,8 @@ function Home() {
           </div>
         </div>
         {/* Row 13 */}
-        <div className="row" style={rowSpacing}>
-          <div className="col-3">
+        <div className="row row-cols-1 row-cols-md-2" style={rowSpacing}>
+          <div className="col mb-4">
             <img
               src="/images/shastaMasonJarGlass.jpg"
               className="img-fluid"
@@ -428,7 +428,7 @@ function Home() {
               style={roundedImageStyle}
             />
           </div>
-          <div className="col-3">
+          <div className="col mb-4">
             <img
               src="/images/huckleberryGlass.jpg"
               className="img-fluid"
