@@ -66,7 +66,7 @@ function Home() {
             <img
               src="/images/japanTourMugs.jpg"
               className="img-fluid"
-              alt="Japan Tour Mugs"
+              alt="Custom Japan Tour Mugs"
               style={roundedImageStyle}
             />
           </div>
@@ -74,15 +74,15 @@ function Home() {
             <img
               src="/images/huckleberryGlass.jpg"
               className="img-fluid"
-              alt="Pint Glass"
+              alt="Huckleberry Tombstone Pint Glass"
               style={roundedImageStyle}
             />
           </div>
           <div className="col-4">
             <img
-              src="/images/masonJarGlass.jpg"
+              src="/images/shastaMasonJarGlass.jpg"
               className="img-fluid"
-              alt="Mason Jar Glass"
+              alt="Shasta Mason Jar Glass"
               style={roundedImageStyle}
             />
           </div>
@@ -142,7 +142,7 @@ function Home() {
         <div className="row" style={rowSpacing}>
           <div className="col-4">
             <img
-              src="/images/lightSign.jpg"
+              src="/images/MustangLightSign.jpg"
               className="img-fluid"
               alt="Aviation Light Up Sign"
               style={roundedImageStyle}
