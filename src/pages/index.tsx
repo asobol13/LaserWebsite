@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Footer2 from "../layouts/footer2";
 
 // TODO:
-// 1) Create a better laser video & videos
+// 1) Create a better laser video
 // 2) Logo for site
 
 const pageStyle: CSSProperties = {
@@ -14,7 +14,7 @@ const pageStyle: CSSProperties = {
   display: "flex",
   flexDirection: "column",
   textAlign: "center",
-  paddingBottom: "260px",
+  paddingBottom: "270px",
 };
 
 const panel1Style = {
@@ -79,7 +79,7 @@ function Home() {
       </div>
       <div className="gridContainer" style={photoGalleryStyle}>
         {/* Row 1 */}
-        <div className="row row-cols-1 row-cols-md-2" style={rowSpacing}>
+        <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4" style={rowSpacing}>
           <div className="col mb-4">
             <img
               src="/images/leatherMugEngravings.jpeg"
@@ -114,7 +114,7 @@ function Home() {
           </div>
         </div>
         {/* Row 2 */}
-        <div className="row row-cols-1 row-cols-md-2" style={specialRowSpacing}>
+        <div className="row row-cols-1 row-cols-md-2 row-cols-lg-2" style={specialRowSpacing}>
           <div className="col mb-4">
             <img
               src="/images/woodPhotoEngraving.jpg"
@@ -133,7 +133,7 @@ function Home() {
           </div>
         </div>
         {/* Row 3 */}
-        <div className="row row-cols-1 row-cols-md-2" style={rowSpacing}>
+        <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4" style={rowSpacing}>
           <div className="col mb-4">
             <img
               src="/images/bardahlYetiMugsSide1.jpeg"
@@ -168,7 +168,7 @@ function Home() {
           </div>
         </div>
         {/* Row 4 */}
-        <div className="row row-cols-1 row-cols-md-2" style={specialRowSpacing}>
+        <div className="row row-cols-1 row-cols-md-2 row-cols-lg-2" style={specialRowSpacing}>
           <div className="col mb-4">
             <img
               src="/images/dancoKnives.jpeg"
@@ -187,7 +187,7 @@ function Home() {
           </div>
         </div>
         {/* Row 5 */}
-        <div className="row row-cols-1 row-cols-md-2" style={rowSpacing}>
+        <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4" style={rowSpacing}>
           <div className="col mb-4">
             <img
               src="/images/leatherWallet1.jpg"
@@ -222,7 +222,7 @@ function Home() {
           </div>
         </div>
         {/* Row 6 */}
-        <div className="row row-cols-1 row-cols-md-2" style={specialRowSpacing}>
+        <div className="row row-cols-1 row-cols-md-2 row-cols-lg-2" style={specialRowSpacing}>
           <div className="col mb-4">
             <img
               src="/images/laserCutDieBox1.jpg"
@@ -241,7 +241,7 @@ function Home() {
           </div>
         </div>
         {/* Row 7 */}
-        <div className="row row-cols-1 row-cols-md-2" style={rowSpacing}>
+        <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4" style={rowSpacing}>
           <div className="col mb-4">
             <img
               src="/images/fedexMug.jpeg"
@@ -276,7 +276,7 @@ function Home() {
           </div>
         </div>
         {/* Row 8 */}
-        <div className="row row-cols-1 row-cols-md-2" style={specialRowSpacing}>
+        <div className="row row-cols-1 row-cols-md-2 row-cols-lg-2" style={specialRowSpacing}>
           <div className="col mb-4">
             <img
               src="/images/aluminumStickers.jpg"
@@ -295,7 +295,7 @@ function Home() {
           </div>
         </div>
         {/* Row 9 */}
-        <div className="row row-cols-1 row-cols-md-2" style={rowSpacing}>
+        <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4" style={rowSpacing}>
           <div className="col mb-4">
             <img
               src="/images/dancoYetiRambler.jpeg"
@@ -330,7 +330,7 @@ function Home() {
           </div>
         </div>
         {/* Row 10 */}
-        <div className="row row-cols-1 row-cols-md-2" style={specialRowSpacing}>
+        <div className="row row-cols-1 row-cols-md-2 row-cols-lg-2" style={specialRowSpacing}>
           <div className="col mb-4">
             <img
               src="/images/remadePlacard.PNG"
@@ -349,7 +349,7 @@ function Home() {
           </div>
         </div>
         {/* Row 11 */}
-        <div className="row row-cols-1 row-cols-md-2" style={rowSpacing}>
+        <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4" style={rowSpacing}>
           <div className="col mb-4">
             <img
               src="/images/leatherBook.jpg"
@@ -384,7 +384,7 @@ function Home() {
           </div>
         </div>
         {/* Row 12 */}
-        <div className="row row-cols-1 row-cols-md-2" style={rowSpacing}>
+        <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4" style={rowSpacing}>
           <div className="col mb-4">
             <img
               src="/images/customMachiningMug.jpg"
@@ -419,7 +419,7 @@ function Home() {
           </div>
         </div>
         {/* Row 13 */}
-        <div className="row row-cols-1 row-cols-md-2" style={rowSpacing}>
+        <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4" style={rowSpacing}>
           <div className="col mb-4">
             <img
               src="/images/shastaMasonJarGlass.jpg"
