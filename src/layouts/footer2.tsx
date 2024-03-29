@@ -126,7 +126,7 @@ const Footer2 = () => {
               </div>
             </div>
           </div>
-          <div className="column col-md-6 col-sm-12">
+          {/* <div className="column col-md-6 col-sm-12">
             <div
               style={footerColumnStyle}
             >
@@ -155,7 +155,7 @@ const Footer2 = () => {
                 </form>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
         <hr />
         <div className="row">
